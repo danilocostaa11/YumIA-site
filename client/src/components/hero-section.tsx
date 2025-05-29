@@ -13,9 +13,9 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
-      <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-transparent"></div>
+    <section id="home" className="relative bg-gradient-dark text-white py-20 circuit-pattern">
+      <div className="absolute inset-0 bg-yum-dark bg-opacity-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-yum-primary/90 to-transparent"></div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

@@ -43,8 +43,8 @@ export default function Navigation() {
                 className="h-12 w-auto"
               />
               <div>
-                <h1 className="text-2xl font-bold text-blue-600">YumIA</h1>
-                <p className="text-xs text-gray-600">Inteligência Artificial Estratégica</p>
+                <h1 className="text-2xl font-bold text-yum-primary">YumIA</h1>
+                <p className="text-xs text-yum-gray">Inteligência Artificial Estratégica</p>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function Navigation() {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+                  className="text-yum-gray hover:text-yum-primary transition-colors duration-300 font-medium"
                 >
                   {item.label}
                 </button>
@@ -66,7 +66,7 @@ export default function Navigation() {
           <div className="hidden md:block">
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-amber-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-amber-600 transition-colors duration-300"
+              className="bg-gradient-primary text-white px-6 py-2 rounded-lg font-medium hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Agendar Consultoria
             </Button>
@@ -86,14 +86,14 @@ export default function Navigation() {
                     <button
                       key={item.href}
                       onClick={() => scrollToSection(item.href)}
-                      className="text-left text-gray-700 hover:text-blue-600 transition-colors duration-300 py-2"
+                      className="text-left text-yum-gray hover:text-yum-primary transition-colors duration-300 py-2 font-medium"
                     >
                       {item.label}
                     </button>
                   ))}
                   <Button 
                     onClick={() => scrollToSection('contact')}
-                    className="bg-amber-500 text-white hover:bg-amber-600 mt-4"
+                    className="bg-gradient-primary text-white hover:opacity-90 mt-4"
                   >
                     Agendar Consultoria
                   </Button>

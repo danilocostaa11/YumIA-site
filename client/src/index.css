@@ -62,28 +62,41 @@
   }
 }
 
-/* Custom styles for YumIA theme */
+/* Custom styles for YumIA theme - Harmonized with logo */
 :root {
-  --yum-blue: 221 83% 53%;
-  --yum-green: 160 84% 39%;
-  --yum-amber: 43 96% 56%;
-  --yum-dark: 217 33% 17%;
-  --yum-gray: 215 16% 47%;
-  --yum-light: 210 20% 98%;
+  /* Logo-inspired color palette */
+  --yum-primary: 194 74% 33%;    /* Deep teal from logo */
+  --yum-secondary: 180 61% 55%;  /* Lighter teal/cyan from logo */
+  --yum-accent: 195 100% 85%;    /* Light cyan accent */
+  --yum-dark: 200 50% 15%;       /* Dark blue-green */
+  --yum-gray: 200 15% 45%;       /* Neutral gray with blue undertones */
+  --yum-light: 195 25% 97%;      /* Very light blue-white */
+  --yum-white: 0 0% 100%;        /* Pure white */
+  
+  /* Gradient combinations inspired by logo */
+  --gradient-primary: linear-gradient(135deg, hsl(var(--yum-primary)) 0%, hsl(var(--yum-secondary)) 100%);
+  --gradient-accent: linear-gradient(135deg, hsl(var(--yum-secondary)) 0%, hsl(var(--yum-accent)) 100%);
+  --gradient-dark: linear-gradient(135deg, hsl(var(--yum-dark)) 0%, hsl(var(--yum-primary)) 100%);
 }
 
-.text-yum-blue { color: hsl(var(--yum-blue)); }
-.bg-yum-blue { background-color: hsl(var(--yum-blue)); }
-.text-yum-green { color: hsl(var(--yum-green)); }
-.bg-yum-green { background-color: hsl(var(--yum-green)); }
-.text-yum-amber { color: hsl(var(--yum-amber)); }
-.bg-yum-amber { background-color: hsl(var(--yum-amber)); }
+/* Logo-harmonized utility classes */
+.text-yum-primary { color: hsl(var(--yum-primary)); }
+.bg-yum-primary { background-color: hsl(var(--yum-primary)); }
+.text-yum-secondary { color: hsl(var(--yum-secondary)); }
+.bg-yum-secondary { background-color: hsl(var(--yum-secondary)); }
+.text-yum-accent { color: hsl(var(--yum-accent)); }
+.bg-yum-accent { background-color: hsl(var(--yum-accent)); }
 .text-yum-dark { color: hsl(var(--yum-dark)); }
 .bg-yum-dark { background-color: hsl(var(--yum-dark)); }
 .text-yum-gray { color: hsl(var(--yum-gray)); }
 .bg-yum-gray { background-color: hsl(var(--yum-gray)); }
 .text-yum-light { color: hsl(var(--yum-light)); }
 .bg-yum-light { background-color: hsl(var(--yum-light)); }
+
+/* Gradient backgrounds matching logo aesthetics */
+.bg-gradient-primary { background: var(--gradient-primary); }
+.bg-gradient-accent { background: var(--gradient-accent); }
+.bg-gradient-dark { background: var(--gradient-dark); }
 
 /* Custom animations and transitions */
 @keyframes fadeInUp {
@@ -116,13 +129,13 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Custom gradient backgrounds */
-.gradient-blue-green {
-  background: linear-gradient(135deg, hsl(var(--yum-blue)) 0%, hsl(var(--yum-green)) 100%);
-}
-
-.gradient-blue-dark {
-  background: linear-gradient(135deg, hsl(var(--yum-blue)) 0%, hsl(217 50% 25%) 100%);
+/* Tech-inspired patterns matching logo design */
+.circuit-pattern {
+  background-image: 
+    radial-gradient(circle at 20% 80%, hsl(var(--yum-secondary) / 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 80% 20%, hsl(var(--yum-accent) / 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 40% 40%, hsl(var(--yum-primary) / 0.05) 1px, transparent 1px);
+  background-size: 30px 30px, 40px 40px, 20px 20px;
 }
 
 /* Enhanced focus states for accessibility */
