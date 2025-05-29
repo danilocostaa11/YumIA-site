@@ -1,0 +1,156 @@
+ Por favor, crie um site para a YumIA com base nas seguintes informações]
+
+
+
+
+**1. Objetivo Principal do Site:**
+Gerar leads qualificados para os serviços de consultoria e implementação de Inteligência Artificial da YumIA, educando o mercado sobre os benefícios da IA para otimização de processos e ganho operacional.
+
+
+
+
+**2. Nome da Empresa:**
+YumIA - Soluções Especializadas em Inteligência Artificial
+
+
+
+
+**3. Tagline Sugerida (escolha uma ou inspire-se):**
+*   YumIA: Inteligência Artificial Estratégica para Resultados Reais.
+*   YumIA: Transformando Processos com IA, Gerando Valor para seu Negócio.
+*   YumIA: Seu Parceiro em Otimização e Inovação com Inteligência Artificial.
+
+
+
+
+**4. Proposta de Valor Central da YumIA:**
+A YumIA não vende apenas "IA", mas uma parceria estratégica que começa com um diagnóstico profundo ("Eco emIA") para identificar GAPs e oportunidades de otimização com ROI claro. Implementamos soluções de IA personalizadas (usando ferramentas como n8n, Make.com, APIs de LLMs, ClickUp, Notion) e oferecemos acompanhamento contínuo para garantir resultados tangíveis, como redução de custos, aumento de eficiência e vantagem competitiva.
+
+
+
+
+**5. Público-Alvo:**
+*   **Primário:** Pequenas e Médias Empresas (PMEs) que buscam otimizar processos, reduzir custos e inovar, mas não sabem como começar com IA ou temem a complexidade.
+*   **Secundário:** Empresas de médio e grande porte que necessitam de expertise externa para otimizar áreas específicas ou validar suas estratégias de IA.
+*   **Decisores:** CEOs, Diretores de Operações, Gerentes de TI, Empreendedores.
+
+
+
+
+**6. Tom de Voz e Estilo do Site:**
+*   Profissional, especialista, inovador.
+*   Confiável, focado em resultados, transparente.
+*   Acessível e didático (evitar jargão excessivo sem explicação).
+*   Orientado à solução e aos benefícios para o cliente.
+
+
+
+
+**7. Mensagens-Chave a Serem Comunicadas:**
+*   A IA pode ser complexa, mas a YumIA simplifica e entrega resultados mensuráveis.
+*   Não adotar IA pode deixar sua empresa para trás; nós ajudamos você a liderar.
+*   Nossa abordagem "Eco emIA" (Diagnóstico, Implementação, Acompanhamento) é completa e focada no seu sucesso.
+*   Oferecemos mais que tecnologia: oferecemos parceria estratégica e transformação de negócios.
+
+
+
+
+**8. Estrutura do Site e Conteúdo Principal (Páginas):**
+
+
+
+
+*   **Página Inicial (Home):**
+    *   **Seção Herói:** Título impactante (Ex: "Desbloqueie o Potencial Máximo do seu Negócio com Inteligência Artificial Estratégica"), subtítulo explicando brevemente o que a YumIA faz, e um CTA principal (Ex: "Agende uma Consultoria Diagnóstica").
+    *   **Problema/Solução:** Destaque as dores comuns das empresas (processos manuais, falta de eficiência, medo de ficar para trás) e como a YumIA resolve isso.
+    *   **Apresentação do "Eco emIA":** Uma breve explicação visual ou textual dos 3 módulos (Diagnóstico, Implementação, Acompanhamento).
+    *   **Nossos Serviços (Visão Geral):** Cards ou seções curtas para cada um dos 3 módulos do "Eco emIA", com link para a página de serviços detalhada.
+    *   **Por que YumIA? (Diferenciais):** Foco em ROI, abordagem holística, expertise, parceria.
+    *   **Prova Social:** Seção para depoimentos de clientes (mesmo que hipotéticos inicialmente, como "Empresas que confiam em nós") ou logos de parceiros.
+    *   **CTA Secundário:** Ex: "Conheça nossos cases" ou "Baixe nosso e-book sobre IA para PMEs".
+
+
+
+
+*   **Sobre Nós:**
+    *   Nossa Missão, Visão e Valores.
+    *   A história da YumIA (se relevante) ou o propósito por trás da empresa.
+    *   Apresentação da expertise da equipe (ou do conceito do "Executivo de IA" como seu guia).
+    *   Nosso compromisso com resultados e inovação.
+
+
+
+
+*   **Serviços (Detalhado - "Eco emIA"):**
+    *   Página principal de serviços explicando a filosofia do "Eco emIA".
+    *   **Subpágina/Seção para Módulo 1: Diagnóstico Estratégico e Mapeamento com Precisão:**
+        *   O que é (análise BPMN, identificação de GAPs).
+        *   O que entrega (Blueprint Visual, Plano de Execução, cálculo de ROI).
+        *   Benefícios (clareza, priorização de investimentos, base para decisões).
+    *   **Subpágina/Seção para Módulo 2: Implementação de Soluções de IA:**
+        *   O que é (desenvolvimento/configuração de automações, chatbots, integrações com CRMs, ERPs, ClickUp, Notion, etc., usando n8n, Make, APIs de LLMs).
+        *   O que entrega (soluções de IA operacionais).
+        *   Benefícios (eficiência, redução de erros, agilidade).
+    *   **Subpágina/Seção para Módulo 3: Acompanhamento e Otimização Contínua:**
+        *   O que é (monitoramento, ajustes, novas otimizações, suporte).
+        *   O que entrega (relatórios, melhorias contínuas).
+        *   Benefícios (garantia de performance, evolução da solução, maximização do LTV da IA).
+
+
+
+
+*   **Cases de Sucesso (ou Estudos de Caso):**
+    *   Exemplos práticos de como a YumIA ajudou empresas a alcançar resultados.
+    *   Formato: Desafio -> Solução YumIA -> Resultados (quantificáveis sempre que possível).
+    *   (Inicialmente, pode ser uma página "Em breve" ou com exemplos hipotéticos de setores.)
+
+
+
+
+*   **Blog/Recursos:**
+    *   Artigos sobre IA, otimização de processos, transformação digital, dicas para PMEs.
+    *   Guias, e-books para download (geração de leads).
+    *   Objetivo: Educar o mercado, demonstrar expertise, SEO.
+
+
+
+
+*   **Contato:**
+    *   Formulário de contato.
+    *   Informações de contato (e-mail, telefone, se aplicável).
+    *   Mapa (se houver um escritório físico).
+    *   Links para redes sociais (LinkedIn principalmente).
+
+
+
+
+**9. Call to Action (CTA) Principal e Secundários:**
+*   **Principal:** "Agende uma Consultoria Diagnóstica Gratuita" ou "Fale com um Especialista YumIA".
+*   **Secundários:** "Saiba Mais sobre Nossos Serviços", "Veja Nossos Cases", "Baixe nosso E-book", "Inscreva-se na Newsletter".
+
+
+
+
+**10. Elementos Visuais e Design:**
+*   **Estilo:** Moderno, clean, profissional, tecnológico.
+*   **Cores:** Paleta que transmita confiança e inovação (Ex: tons de azul, verde, cinza, talvez com um toque de uma cor mais vibrante como laranja ou amarelo para CTAs e destaques).
+*   **Imagens/Ícones:** Usar imagens e ícones de alta qualidade, relacionados à tecnologia, negócios, eficiência, colaboração. Abstrações ou ilustrações modernas podem funcionar bem. Evitar fotos de banco de imagens muito genéricas.
+
+
+
+
+**11. O que Evitar:**
+*   Linguagem excessivamente técnica sem explicação.
+*   Promessas vagas sem foco em resultados.
+*   Design poluído ou confuso.
+*   Processo de contato complicado.
+
+
+
+
+**12. Inspirações (Opcional):**
+*   Se houver sites de consultorias de TI ou IA que você admire o estilo ou a forma como comunicam, mencione-os (Ex: "Gosto da clareza do site X" ou "A forma como o site Y apresenta cases é interessante").
+*   Mencionar o estilo de conteúdo do "KCG Group" como uma referência para a profundidade e abordagem educacional do blog.
+
+
+Por favor use esse exemplo de site: https://zielhub.com
