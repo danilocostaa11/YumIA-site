@@ -53,9 +53,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <div className="mb-6">
-              <h3 className="text-2xl font-bold text-white mb-2">YumIA</h3>
-              <p className="text-gray-400">Soluções Especializadas em Inteligência Artificial</p>
+            <div className="mb-6 flex items-center space-x-3">
+              <img 
+                src={yumiaLogo} 
+                alt="YumIA Logo" 
+                className="h-16 w-auto"
+              />
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2">YumIA</h3>
+                <p className="text-gray-400">Soluções Especializadas em Inteligência Artificial</p>
+              </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Transformamos a complexidade da IA em soluções práticas que geram resultados reais. 
