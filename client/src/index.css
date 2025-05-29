@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222 84% 5%;
+  --muted: 210 40% 98%;
+  --muted-foreground: 215 16% 47%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 84% 5%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 84% 5%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --primary: 221 83% 53%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222 47% 11%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222 47% 11%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 221 83% 53%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222 84% 5%;
+  --foreground: 210 40% 98%;
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+  --popover: 222 84% 5%;
+  --popover-foreground: 210 40% 98%;
+  --card: 222 84% 5%;
+  --card-foreground: 210 40% 98%;
+  --border: 217 33% 17%;
+  --input: 217 33% 17%;
+  --primary: 221 83% 53%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 217 33% 17%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 217 33% 17%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 221 83% 53%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom styles for YumIA theme */
+:root {
+  --yum-blue: 221 83% 53%;
+  --yum-green: 160 84% 39%;
+  --yum-amber: 43 96% 56%;
+  --yum-dark: 217 33% 17%;
+  --yum-gray: 215 16% 47%;
+  --yum-light: 210 20% 98%;
+}
+
+.text-yum-blue { color: hsl(var(--yum-blue)); }
+.bg-yum-blue { background-color: hsl(var(--yum-blue)); }
+.text-yum-green { color: hsl(var(--yum-green)); }
+.bg-yum-green { background-color: hsl(var(--yum-green)); }
+.text-yum-amber { color: hsl(var(--yum-amber)); }
+.bg-yum-amber { background-color: hsl(var(--yum-amber)); }
+.text-yum-dark { color: hsl(var(--yum-dark)); }
+.bg-yum-dark { background-color: hsl(var(--yum-dark)); }
+.text-yum-gray { color: hsl(var(--yum-gray)); }
+.bg-yum-gray { background-color: hsl(var(--yum-gray)); }
+.text-yum-light { color: hsl(var(--yum-light)); }
+.bg-yum-light { background-color: hsl(var(--yum-light)); }
+
+/* Custom animations and transitions */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Smooth scrolling for anchor links */
+[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Custom button hover effects */
+.btn-hover-lift {
+  transition: all 0.3s ease;
+}
+
+.btn-hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom gradient backgrounds */
+.gradient-blue-green {
+  background: linear-gradient(135deg, hsl(var(--yum-blue)) 0%, hsl(var(--yum-green)) 100%);
+}
+
+.gradient-blue-dark {
+  background: linear-gradient(135deg, hsl(var(--yum-blue)) 0%, hsl(217 50% 25%) 100%);
+}
+
+/* Enhanced focus states for accessibility */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+}
