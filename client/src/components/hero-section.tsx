@@ -22,9 +22,9 @@ export default function HeroSection() {
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Desbloqueie o Potencial Máximo do seu{" "}
-              <span className="text-amber-400">Negócio</span> com IA Estratégica
+              <span className="text-yum-accent">Negócio</span> com IA Estratégica
             </h1>
-            <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+            <p className="text-xl text-yum-light/90 mb-8 leading-relaxed">
               Transformamos processos complexos em soluções inteligentes que geram resultados reais. 
               Nossa metodologia exclusiva "Eco emIA" garante ROI mensurável e vantagem competitiva duradoura.
             </p>
@@ -33,7 +33,7 @@ export default function HeroSection() {
               <Button 
                 onClick={scrollToContact}
                 size="lg"
-                className="bg-amber-500 text-white px-8 py-4 text-lg font-semibold hover:bg-amber-600 transition-all duration-300 transform hover:scale-105"
+                className="bg-gradient-accent text-yum-dark px-8 py-4 text-lg font-semibold hover:opacity-90 transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
                 <Calendar className="mr-2 h-5 w-5" />
                 Agende Consultoria Gratuita
@@ -42,7 +42,7 @@ export default function HeroSection() {
                 onClick={scrollToMethodology}
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300"
+                className="border-2 border-yum-accent text-yum-accent px-8 py-4 text-lg font-semibold hover:bg-yum-accent hover:text-yum-dark transition-all duration-300"
               >
                 <Play className="mr-2 h-5 w-5" />
                 Saiba Mais
@@ -51,16 +51,16 @@ export default function HeroSection() {
             
             <div className="mt-12 flex items-center space-x-8">
               <div className="text-center">
-                <div className="text-2xl font-bold text-amber-400">+300%</div>
-                <div className="text-sm text-blue-200">ROI Médio</div>
+                <div className="text-2xl font-bold text-yum-accent">+300%</div>
+                <div className="text-sm text-yum-light/80">ROI Médio</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-amber-400">-50%</div>
-                <div className="text-sm text-blue-200">Tempo de Processos</div>
+                <div className="text-2xl font-bold text-yum-accent">-50%</div>
+                <div className="text-sm text-yum-light/80">Tempo de Processos</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-amber-400">98%</div>
-                <div className="text-sm text-blue-200">Satisfação</div>
+                <div className="text-2xl font-bold text-yum-accent">98%</div>
+                <div className="text-sm text-yum-light/80">Satisfação</div>
               </div>
             </div>
           </div>
@@ -73,16 +73,16 @@ export default function HeroSection() {
             />
             
             {/* Floating stats card */}
-            <div className="absolute -bottom-6 -left-6 bg-white text-gray-800 p-4 rounded-xl shadow-lg">
+            <div className="absolute -bottom-6 -left-6 bg-white text-yum-dark p-4 rounded-xl shadow-lg border border-yum-accent/20">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                   </svg>
                 </div>
                 <div>
-                  <div className="font-bold text-lg">50+</div>
-                  <div className="text-sm text-gray-600">Projetos Ativos</div>
+                  <div className="font-bold text-lg text-yum-primary">50+</div>
+                  <div className="text-sm text-yum-gray">Projetos Ativos</div>
                 </div>
               </div>
             </div>

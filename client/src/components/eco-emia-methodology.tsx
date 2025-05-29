@@ -6,19 +6,19 @@ export default function EcoEmiaMethodology() {
       number: "1",
       title: "Diagnóstico Estratégico",
       description: "Análise profunda dos processos atuais, mapeamento BPMN e identificação de oportunidades de otimização com cálculo de ROI.",
-      color: "from-blue-600 to-blue-600"
+      color: "from-yum-primary to-yum-primary"
     },
     {
       number: "2",
       title: "Implementação Personalizada",
       description: "Desenvolvimento de soluções de IA usando ferramentas como n8n, Make.com, APIs de LLMs e integração com seus sistemas existentes.",
-      color: "from-emerald-500 to-emerald-600"
+      color: "from-yum-secondary to-yum-secondary"
     },
     {
       number: "3",
       title: "Acompanhamento Contínuo",
       description: "Monitoramento de performance, ajustes contínuos e novas otimizações para garantir máximo retorno do investimento.",
-      color: "from-amber-500 to-orange-500"
+      color: "from-yum-accent to-yum-secondary"
     }
   ];
 
@@ -33,7 +33,7 @@ export default function EcoEmiaMethodology() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Nossa Metodologia Exclusiva: <span className="text-blue-600">Eco emIA</span>
+            Nossa Metodologia Exclusiva: <span className="text-yum-primary">Eco emIA</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Uma abordagem holística que garante implementação bem-sucedida de IA com resultados mensuráveis e duradouros.
