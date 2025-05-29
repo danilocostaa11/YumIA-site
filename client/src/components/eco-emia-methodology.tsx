@@ -56,22 +56,19 @@ export default function EcoEmiaMethodology() {
         <div className="bg-gradient-to-r from-blue-600 to-emerald-500 rounded-2xl p-8 text-white">
           <h3 className="text-2xl font-bold text-center mb-8">Fluxo do Processo Eco emIA</h3>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
-            {processSteps.map((step, index) => (
-              <>
-                <div key={step.label} className="text-center">
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">{step.icon}</span>
-                  </div>
-                  <p className="font-medium">{step.label}</p>
+            {processSteps.flatMap((step, index) => [
+              <div key={step.label} className="text-center">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">{step.icon}</span>
                 </div>
-                
-                {index < processSteps.length - 1 && (
-                  <div key={`arrow-${index}`} className="text-center">
-                    <ArrowRight className="text-2xl text-white/70 hidden md:block mx-auto" />
-                  </div>
-                )}
-              </>
-            ))}
+                <p className="font-medium">{step.label}</p>
+              </div>,
+              ...(index < processSteps.length - 1 ? [
+                <div key={`arrow-${index}`} className="text-center">
+                  <ArrowRight className="text-2xl text-white/70 hidden md:block mx-auto" />
+                </div>
+              ] : [])
+            ])}
           </div>
         </div>
       </div>

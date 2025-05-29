@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import yumiaLogo from "@assets/097b012a-439f-4a25-80a7-51e6c3082c9fdanilo-costa.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,9 +36,16 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-blue-600">YumIA</h1>
-              <p className="text-xs text-gray-600">Inteligência Artificial Estratégica</p>
+            <div className="flex-shrink-0 flex items-center space-x-3">
+              <img 
+                src={yumiaLogo} 
+                alt="YumIA Logo" 
+                className="h-12 w-auto"
+              />
+              <div>
+                <h1 className="text-2xl font-bold text-blue-600">YumIA</h1>
+                <p className="text-xs text-gray-600">Inteligência Artificial Estratégica</p>
+              </div>
             </div>
           </div>
           

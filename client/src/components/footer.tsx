@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import yumiaLogo from "@assets/097b012a-439f-4a25-80a7-51e6c3082c9fdanilo-costa.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
