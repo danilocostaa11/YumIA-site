@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Play } from "lucide-react";
 import ConsultationFormModal from "./consultation-form-modal";
+import heroIllustration from "@/assets/hero-illustration.svg";
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -68,11 +69,13 @@ export default function HeroSection() {
           </div>
           
           <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Equipe profissional trabalhando com tecnologia AI" 
-              className="rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500" 
-            />
+            <div className="bg-white rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 p-6">
+              <img 
+                src={heroIllustration}
+                alt="Dashboard inteligente com IA para otimização de processos empresariais" 
+                className="w-full h-auto max-w-lg mx-auto"
+              />
+            </div>
             
             {/* Floating stats card */}
             <div className="absolute -bottom-6 -left-6 bg-white text-yum-dark p-4 rounded-xl shadow-lg border border-yum-accent/20">
