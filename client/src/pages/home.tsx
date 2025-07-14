@@ -9,6 +9,7 @@ import ResourcesSection from "@/components/resources-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import Chatbot from "@/components/chatbot";
+import WhatsAppButton from "@/components/whatsapp-button";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <ContactSection />
       <Footer />
       <Chatbot />
+      <WhatsAppButton />
       
       {/* Floating CTA Button for mobile */}
       <div className="fixed bottom-6 left-6 z-50 md:hidden">

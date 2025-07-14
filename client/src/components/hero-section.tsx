@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Play } from "lucide-react";
+import ConsultationFormModal from "./consultation-form-modal";
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -30,14 +31,15 @@ export default function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                onClick={scrollToContact}
-                size="lg"
-                className="bg-gradient-accent text-yum-dark px-8 py-4 text-lg font-semibold hover:opacity-90 transition-all duration-300 transform hover:scale-105 shadow-xl"
-              >
-                <Calendar className="mr-2 h-5 w-5" />
-                Agende Consultoria Gratuita
-              </Button>
+              <ConsultationFormModal>
+                <Button 
+                  size="lg"
+                  className="bg-gradient-accent text-yum-dark px-8 py-4 text-lg font-semibold hover:opacity-90 transition-all duration-300 transform hover:scale-105 shadow-xl"
+                >
+                  <Calendar className="mr-2 h-5 w-5" />
+                  Agende Consultoria Gratuita
+                </Button>
+              </ConsultationFormModal>
               <Button 
                 onClick={scrollToMethodology}
                 variant="outline"
