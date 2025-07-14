@@ -53,7 +53,7 @@ export default function EcoEmiaMethodology() {
         </div>
         
         {/* Process Flow Visualization */}
-        <div className="bg-gradient-to-r from-blue-600 to-emerald-500 rounded-2xl p-8 text-white">
+        <div className="bg-gradient-dark rounded-2xl p-8 text-white">
           <h3 className="text-2xl font-bold text-center mb-8">Fluxo do Processo Eco emIA</h3>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
             {processSteps.flatMap((step, index) => [

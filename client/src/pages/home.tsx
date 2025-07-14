@@ -8,6 +8,7 @@ import TestimonialsSection from "@/components/testimonials-section";
 import ResourcesSection from "@/components/resources-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
+import Chatbot from "@/components/chatbot";
 
 export default function Home() {
   return (
@@ -22,9 +23,10 @@ export default function Home() {
       <ResourcesSection />
       <ContactSection />
       <Footer />
+      <Chatbot />
       
       {/* Floating CTA Button for mobile */}
-      <div className="fixed bottom-6 right-6 z-50 md:hidden">
+      <div className="fixed bottom-6 left-6 z-50 md:hidden">
         <button 
           onClick={() => {
             const element = document.getElementById('contact');
