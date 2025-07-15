@@ -52,26 +52,26 @@ export default function ResourcesSection() {
 
   const blogPosts = [
     {
-      category: "IA",
-      date: "12 de Janeiro, 2024",
-      title: "Como a IA pode transformar PMEs em 2024",
-      description: "Descubra as principais tendências e oportunidades que a Inteligência Artificial oferece para pequenas e médias empresas.",
+      category: "IA Agêntica",
+      date: "10 de Janeiro, 2025",
+      title: "Agentes de IA Autônomos: O Futuro da Automação Empresarial",
+      description: "Descubra como os agentes de IA que executam tarefas complexas sem supervisão estão transformando a gestão empresarial em 2025.",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300",
       categoryColor: "bg-blue-600"
     },
     {
-      category: "Automação",
-      date: "8 de Janeiro, 2024",
-      title: "Guia Completo de Automação de Processos",
-      description: "Passo a passo para identificar, planejar e implementar automações que realmente geram valor para seu negócio.",
+      category: "Hiperautomação",
+      date: "7 de Janeiro, 2025",
+      title: "80% das Empresas Adotarão Automação Inteligente até 2025",
+      description: "Análise das tendências que levam à adoção massiva da hiperautomação e como sua empresa pode se preparar.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300",
       categoryColor: "bg-emerald-500"
     },
     {
-      category: "ROI",
-      date: "5 de Janeiro, 2024",
-      title: "Calculando o ROI de Projetos de IA",
-      description: "Metodologia prática para mensurar o retorno sobre investimento em implementações de Inteligência Artificial.",
+      category: "IA Multimodal",
+      date: "5 de Janeiro, 2025",
+      title: "IA Multimodal: Redução de 50% no Tempo de Lançamento",
+      description: "Como a integração de texto, imagem e áudio está revolucionando o desenvolvimento de produtos e reduzindo custos em 30%.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300",
       categoryColor: "bg-amber-500"
     }

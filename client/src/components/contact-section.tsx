@@ -82,13 +82,13 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: "E-mail",
-      value: "contato@yumia.com.br",
+      value: "yumia.contato@gmail.com",
       color: "bg-blue-600"
     },
     {
       icon: Phone,
       title: "Telefone",
-      value: "(11) 99999-9999",
+      value: "(11) 9 3394-1497",
       color: "bg-emerald-500"
     }
   ];

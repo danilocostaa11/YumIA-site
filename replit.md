@@ -44,6 +44,12 @@ Sistema proprietário em 3 módulos:
 ✓ SEO otimizado
 
 ## Mudanças Recentes
+- **2025-01-15**: Atualizações de conteúdo e contato
+  - Atualização dos recursos educacionais com artigos de 2025
+  - Artigos sobre IA Agêntica, Hiperautomação e IA Multimodal
+  - Alteração do LinkedIn para Instagram (@yumia.ai)
+  - Atualização das informações de contato
+  - Nova ilustração SVG personalizada com metodologia Eco emIA
 - **2025-01-14**: Implementação completa do chatbot com OpenAI
   - Criado componente Chatbot funcional
   - Integração backend com GPT-4o
