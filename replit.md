@@ -44,10 +44,12 @@ Sistema proprietário em 3 módulos:
 ✓ SEO otimizado
 
 ## Mudanças Recentes
-- **2025-01-22**: Correções finais para publicação
+- **2025-01-22**: Correções de deploy e preparação para publicação
+  - Resolvido problema de build para deployment estático/servidor
+  - Script `deploy-build.sh` organiza arquivos para ambos os tipos de deploy
+  - Arquivos copiados para `dist/` (estático) e `server/public/` (servidor)
   - Nova seção "Principais Nichos que Usam IA" com métricas impactantes
   - Corrigida grafia oficial "YumIA" em todos os textos
-  - Preparação para deploy com domínio personalizado
   - Sistema de cores totalmente harmonizado com logotipo
 - **2025-01-15**: Atualizações de conteúdo e contato
   - Atualização dos recursos educacionais com artigos de 2025
@@ -89,9 +91,15 @@ Sistema proprietário em 3 módulos:
 ## Deploy e Produção
 ### Problema Resolvido: Estrutura de Build
 - **Issue**: Build criava arquivos em `dist/public/` mas deploy esperava em `dist/`
-- **Solução**: Script `deploy-build.sh` reorganiza arquivos automaticamente
+- **Issue**: Servidor de produção procurava arquivos em `server/public/`
+- **Solução**: Script `deploy-build.sh` organiza arquivos para ambos os cenários
 - **Processo**: 
   1. Executa `npm run build`
-  2. Move arquivos de `dist/public/*` para `dist/`
-  3. Remove diretório `dist/public/`
-  4. index.html fica na raiz de `dist/` para deploy estático
+  2. Copia arquivos de `dist/public/*` para `dist/` (deploy estático)
+  3. Copia arquivos de `dist/public/*` para `server/public/` (servidor Node.js)
+  4. Remove diretório `dist/public/` original
+  5. Aplicação funciona tanto como estática quanto como serviço Node.js
+
+### Tipos de Deployment Suportados
+- **Estático**: Arquivos em `dist/` - para sites sem backend
+- **Serviço Node.js**: Servidor completo com chatbot - recomendado para funcionalidade completa
