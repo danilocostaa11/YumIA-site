@@ -2,6 +2,7 @@ import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import ProblemSolution from "@/components/problem-solution";
 import EcoEmiaMethodology from "@/components/eco-emia-methodology";
+import AINichesSection from "@/components/ai-niches-section";
 import ServicesOverview from "@/components/services-overview";
 import AboutSection from "@/components/about-section";
 import TestimonialsSection from "@/components/testimonials-section";
@@ -18,6 +19,7 @@ export default function Home() {
       <HeroSection />
       <ProblemSolution />
       <EcoEmiaMethodology />
+      <AINichesSection />
       <ServicesOverview />
       <AboutSection />
       <TestimonialsSection />

@@ -45,6 +45,7 @@ Sistema proprietário em 3 módulos:
 
 ## Mudanças Recentes
 - **2025-01-22**: Correções finais para publicação
+  - Nova seção "Principais Nichos que Usam IA" com métricas impactantes
   - Corrigida grafia oficial "YumIA" em todos os textos
   - Preparação para deploy com domínio personalizado
   - Sistema de cores totalmente harmonizado com logotipo
