@@ -82,4 +82,16 @@ Sistema proprietário em 3 módulos:
 
 ## Comandos Principais
 - `npm run dev`: Inicia servidor de desenvolvimento
+- `npm run build`: Constrói aplicação para produção
+- `./deploy-build.sh`: Build otimizado para deploy (corrige estrutura de arquivos)
 - Workflow: "Start application" configurado no Replit
+
+## Deploy e Produção
+### Problema Resolvido: Estrutura de Build
+- **Issue**: Build criava arquivos em `dist/public/` mas deploy esperava em `dist/`
+- **Solução**: Script `deploy-build.sh` reorganiza arquivos automaticamente
+- **Processo**: 
+  1. Executa `npm run build`
+  2. Move arquivos de `dist/public/*` para `dist/`
+  3. Remove diretório `dist/public/`
+  4. index.html fica na raiz de `dist/` para deploy estático
