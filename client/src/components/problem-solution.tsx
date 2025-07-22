@@ -39,10 +39,10 @@ export default function ProblemSolution() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-yum-dark mb-6">
             Por que sua empresa precisa da YumIA?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-yum-gray max-w-3xl mx-auto">
             Empresas que não adotam IA ficam para trás. Nós simplificamos a complexidade e entregamos resultados mensuráveis.
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function ProblemSolution() {
           
           {/* Solutions */}
           <div>
-            <h3 className="text-2xl font-bold text-emerald-600 mb-8">Nossa Solução Estratégica</h3>
+            <h3 className="text-2xl font-bold text-yum-turquoise mb-8">Nossa Solução Estratégica</h3>
             
             <img 
               src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 

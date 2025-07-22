@@ -62,16 +62,17 @@
   }
 }
 
-/* Custom styles for YumIA theme - Harmonized with logo */
+/* Custom styles for YumIA theme - Based on logo colors */
 :root {
-  /* Logo-inspired color palette */
-  --yum-primary: 194 74% 33%;    /* Deep teal from logo */
-  --yum-secondary: 180 61% 55%;  /* Lighter teal/cyan from logo */
-  --yum-accent: 195 100% 85%;    /* Light cyan accent */
-  --yum-dark: 200 50% 15%;       /* Dark blue-green */
-  --yum-gray: 200 15% 45%;       /* Neutral gray with blue undertones */
-  --yum-light: 195 25% 97%;      /* Very light blue-white */
-  --yum-white: 0 0% 100%;        /* Pure white */
+  /* YumIA Logo Color Palette */
+  --yum-dark: 202 47% 15%;       /* #142b3d - Azul escuro/petróleo (fundo) */
+  --yum-turquoise: 185 61% 44%;  /* #30b4c5 - Azul turquesa (detalhes do circuito) */
+  --yum-white: 0 0% 100%;        /* #ffffff - Branco (logo e texto) */
+  --yum-primary: 202 47% 15%;    /* Primary = Dark blue */
+  --yum-secondary: 185 61% 44%;  /* Secondary = Turquoise */
+  --yum-accent: 185 61% 44%;     /* Accent = Turquoise */
+  --yum-light: 202 25% 95%;      /* Light variation for backgrounds */
+  --yum-gray: 202 15% 45%;       /* Gray with blue undertones */
   
   /* Gradient combinations inspired by logo */
   --gradient-primary: linear-gradient(135deg, hsl(var(--yum-primary)) 0%, hsl(var(--yum-secondary)) 100%);

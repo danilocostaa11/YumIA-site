@@ -66,7 +66,7 @@ export default function Navigation() {
           <div className="hidden md:block">
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-gradient-primary text-white px-6 py-2 rounded-lg font-medium hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-yum-turquoise text-yum-white px-6 py-2 rounded-lg font-medium hover:bg-yum-turquoise/90 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Agendar Consultoria
             </Button>
@@ -93,7 +93,7 @@ export default function Navigation() {
                   ))}
                   <Button 
                     onClick={() => scrollToSection('contact')}
-                    className="bg-gradient-primary text-white hover:opacity-90 mt-4"
+                    className="bg-yum-turquoise text-yum-white hover:bg-yum-turquoise/90 mt-4"
                   >
                     Agendar Consultoria
                   </Button>
