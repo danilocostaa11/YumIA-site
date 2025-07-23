@@ -73,7 +73,8 @@ Sistema proprietário em 3 módulos:
 ## Próximos Passos
 ✓ Teste do chatbot funcional 
 ✓ Correção da grafia "YumIA" (marca registrada)
-→ Publicação com domínio personalizado do cliente
+✓ Publicação realizada em https://yum-ai-cuisine-yumiacontato.replit.app
+→ Configuração de domínio personalizado
 → Configuração DNS para domínio próprio
 
 ## Configuração de Ambiente
