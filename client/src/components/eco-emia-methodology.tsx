@@ -1,5 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import executiveImage from "@assets/c1a96402-e1d6-4bbd-8e1c-70c00cfee0f4danilo-costa_1753237765284.jpg";
 
 export default function EcoEmiaMethodology() {
   const modules = [
@@ -53,45 +52,23 @@ export default function EcoEmiaMethodology() {
           ))}
         </div>
         
-        {/* Process Flow Visualization with Executive */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-center">
-          {/* Process Flow Diagram */}
-          <div className="lg:col-span-3">
-            <div className="bg-yum-dark rounded-2xl p-8 text-yum-white">
-              <h3 className="text-2xl font-bold text-center mb-8">Fluxo do Processo Eco emIA</h3>
-              <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
-                {processSteps.flatMap((step, index) => [
-                  <div key={step.label} className="text-center">
-                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-2xl">{step.icon}</span>
-                    </div>
-                    <p className="font-medium">{step.label}</p>
-                  </div>,
-                  ...(index < processSteps.length - 1 ? [
-                    <div key={`arrow-${index}`} className="text-center">
-                      <ArrowRight className="text-2xl text-white/70 hidden md:block mx-auto" />
-                    </div>
-                  ] : [])
-                ])}
-              </div>
-            </div>
-          </div>
-          
-          {/* Executive Image pointing to the process flow */}
-          <div className="lg:col-span-1 flex justify-center lg:justify-end">
-            <div className="relative">
-              <img 
-                src={executiveImage} 
-                alt="Executiva YumIA apontando para processo" 
-                className="w-56 h-72 object-cover object-top rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
-              />
-              {/* Pointing gesture indicator */}
-              <div className="absolute -left-12 top-1/3 transform -translate-y-1/2 hidden lg:block">
-                <div className="flex items-center text-yum-turquoise">
-                  <ArrowRight className="w-10 h-10 animate-pulse" />
+        {/* Process Flow Visualization */}
+        <div className="bg-yum-dark rounded-2xl p-8 text-yum-white">
+          <h3 className="text-2xl font-bold text-center mb-8">Fluxo do Processo Eco emIA</h3>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
+            {processSteps.flatMap((step, index) => [
+              <div key={step.label} className="text-center">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">{step.icon}</span>
                 </div>
-              </div>
-            </div>
+                <p className="font-medium">{step.label}</p>
+              </div>,
+              ...(index < processSteps.length - 1 ? [
+                <div key={`arrow-${index}`} className="text-center">
+                  <ArrowRight className="text-2xl text-white/70 hidden md:block mx-auto" />
+                </div>
+              ] : [])
+            ])}
           </div>
         </div>
       </div>
