@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import executiveImage from "@assets/c1a96402-e1d6-4bbd-8e1c-70c00cfee0f4danilo-costa_1753237765284.jpg";
 
 export default function EcoEmiaMethodology() {
   const modules = [
@@ -40,16 +41,39 @@ export default function EcoEmiaMethodology() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {modules.map((module, index) => (
-            <div key={index} className="text-center group hover:transform hover:scale-105 transition-all duration-300">
-              <div className={`w-20 h-20 bg-gradient-to-br ${module.color} rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-xl transition-shadow duration-300`}>
-                <span className="text-2xl font-bold text-white">{module.number}</span>
-              </div>
-              <h3 className="text-xl font-bold text-yum-dark mb-4">{module.title}</h3>
-              <p className="text-yum-gray">{module.description}</p>
+        {/* Methodology with Executive Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16 items-center">
+          {/* Methodology Modules - 3 columns */}
+          <div className="lg:col-span-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {modules.map((module, index) => (
+                <div key={index} className="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                  <div className={`w-20 h-20 bg-gradient-to-br ${module.color} rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-xl transition-shadow duration-300`}>
+                    <span className="text-2xl font-bold text-white">{module.number}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-yum-dark mb-4">{module.title}</h3>
+                  <p className="text-yum-gray">{module.description}</p>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+          
+          {/* Executive Image - 1 column */}
+          <div className="lg:col-span-1 flex justify-center lg:justify-end">
+            <div className="relative">
+              <img 
+                src={executiveImage} 
+                alt="Executiva YumIA apontando para metodologia" 
+                className="w-64 h-80 object-cover rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
+              />
+              {/* Pointing gesture indicator */}
+              <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 hidden lg:block">
+                <div className="flex items-center text-yum-turquoise">
+                  <ArrowRight className="w-8 h-8 animate-pulse" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         
         {/* Process Flow Visualization */}
