@@ -96,11 +96,11 @@ export default function ContactSection() {
   const faqs = [
     {
       question: "Quanto tempo leva uma implementação?",
-      answer: "O prazo varia de 30 a 90 dias, dependendo da complexidade do projeto e do escopo de automação."
+      answer: "O prazo varia de 15 a 90 dias, dependendo da complexidade do projeto e do escopo de automação."
     },
     {
       question: "Qual o investimento mínimo?",
-      answer: "Nossos projetos começam a partir de R$ 15.000, sempre com ROI projetado superior a 300%."
+      answer: "Nossos projetos começam a partir de R$ 4.500, sempre com ROI projetado superior a 300%."
     },
     {
       question: "Oferecem suporte contínuo?",

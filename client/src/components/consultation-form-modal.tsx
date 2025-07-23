@@ -342,7 +342,7 @@ export default function ConsultationFormModal({ children }: ConsultationFormModa
                       <SelectValue placeholder="Faixa de investimento" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="ate-10k">Até R$ 10.000</SelectItem>
+                      <SelectItem value="ate-5k">R$ 4.500 - R$ 10.000</SelectItem>
                       <SelectItem value="10k-25k">R$ 10.000 - R$ 25.000</SelectItem>
                       <SelectItem value="25k-50k">R$ 25.000 - R$ 50.000</SelectItem>
                       <SelectItem value="50k-100k">R$ 50.000 - R$ 100.000</SelectItem>
@@ -365,7 +365,7 @@ export default function ConsultationFormModal({ children }: ConsultationFormModa
                       <SelectValue placeholder="Quando deseja implementar?" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="imediato">Imediato (30 dias)</SelectItem>
+                      <SelectItem value="imediato">Imediato (15 dias)</SelectItem>
                       <SelectItem value="curto">Curto prazo (1-3 meses)</SelectItem>
                       <SelectItem value="medio">Médio prazo (3-6 meses)</SelectItem>
                       <SelectItem value="longo">Longo prazo (6+ meses)</SelectItem>
