@@ -44,6 +44,10 @@ Sistema proprietário em 3 módulos:
 ✓ SEO otimizado
 
 ## Mudanças Recentes
+- **2025-01-24**: Ajustes visuais na primeira seção
+  - Removida imagem da executiva da hero section
+  - Layout limpo focando apenas no dashboard de IA
+  - Primeira seção otimizada para melhor experiência visual
 - **2025-01-22**: Correções de deploy e preparação para publicação
   - Resolvido problema de build para deployment estático/servidor
   - Script `deploy-build.sh` organiza arquivos para ambos os tipos de deploy
