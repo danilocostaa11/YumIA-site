@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Play, ArrowLeft } from "lucide-react";
 import ConsultationFormModal from "./consultation-form-modal";
 import heroIllustration from "@/assets/hero-illustration.svg";
-import executiveImage from "@assets/c1a96402-e1d6-4bbd-8e1c-70c00cfee0f4danilo-costa_1753237765284.jpg";
+import executiveImage from "@assets/c1a96402-e1d6-4bbd-8e1c-70c00cfee0f4danilo-costa_1753368620890.jpg";
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -69,25 +69,25 @@ export default function HeroSection() {
             </div>
           </div>
           
-          <div className="relative">
+          <div className="relative flex items-center justify-center lg:justify-end">
             {/* Executive Image pointing to dashboard */}
-            <div className="absolute -left-20 top-1/2 transform -translate-y-1/2 hidden xl:block z-10">
+            <div className="absolute -left-24 top-1/2 transform -translate-y-1/2 hidden lg:block z-20">
               <div className="relative">
                 <img 
                   src={executiveImage} 
                   alt="Executiva YumIA apresentando solução" 
-                  className="w-40 h-52 object-cover object-top rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
+                  className="w-48 h-60 object-cover object-center rounded-2xl shadow-2xl border-4 border-white transform hover:scale-105 transition-transform duration-300"
                 />
                 {/* Pointing arrow to dashboard */}
-                <div className="absolute -right-8 top-1/3 transform -translate-y-1/2">
-                  <div className="flex items-center text-yum-turquoise">
-                    <ArrowLeft className="w-8 h-8 animate-pulse rotate-180" />
+                <div className="absolute -right-6 top-1/2 transform -translate-y-1/2">
+                  <div className="flex items-center text-yum-turquoise bg-white rounded-full p-2 shadow-lg">
+                    <ArrowLeft className="w-6 h-6 animate-pulse rotate-180" />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 p-6">
+            <div className="bg-white rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 p-6 relative z-10">
               <img 
                 src={heroIllustration}
                 alt="Dashboard inteligente com IA para otimização de processos empresariais" 
