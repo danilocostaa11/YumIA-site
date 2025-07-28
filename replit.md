@@ -78,8 +78,9 @@ Sistema proprietário em 3 módulos:
 ✓ Teste do chatbot funcional 
 ✓ Correção da grafia "YumIA" (marca registrada)
 ✓ Publicação realizada em https://yum-ai-cuisine-yumiacontato.replit.app
-✓ Domínio personalizado www.yumia.com.br configurado (verificando DNS)
-→ Aguardando propagação DNS para ativação completa
+✓ Otimizações de performance (imagens comprimidas, lazy loading, preconnect DNS)
+⚠️ Domínio personalizado www.yumia.com.br com problema de certificado SSL
+→ Necessário reconfigurar domínio personalizado no painel do Replit
 
 ## Configuração de Ambiente
 - Node.js com npm
