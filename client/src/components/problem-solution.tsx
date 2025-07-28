@@ -72,9 +72,10 @@ export default function ProblemSolution() {
             <h3 className="text-2xl font-bold text-yum-turquoise mb-8">Nossa Solução Estratégica</h3>
             
             <img 
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300&q=80" 
               alt="Otimização de processos de negócio com IA" 
               className="rounded-xl shadow-lg mb-8 w-full h-48 object-cover" 
+              loading="lazy"
             />
             
             <div className="space-y-6">

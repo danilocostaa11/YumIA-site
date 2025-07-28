@@ -56,7 +56,7 @@ export default function ResourcesSection() {
       date: "10 de Janeiro, 2025",
       title: "Agentes de IA Autônomos: O Futuro da Automação Empresarial",
       description: "Descubra como os agentes de IA que executam tarefas complexas sem supervisão estão transformando a gestão empresarial em 2025.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80",
       categoryColor: "bg-blue-600"
     },
     {
@@ -64,7 +64,7 @@ export default function ResourcesSection() {
       date: "7 de Janeiro, 2025",
       title: "80% das Empresas Adotarão Automação Inteligente até 2025",
       description: "Análise das tendências que levam à adoção massiva da hiperautomação e como sua empresa pode se preparar.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80",
       categoryColor: "bg-emerald-500"
     },
     {
@@ -72,7 +72,7 @@ export default function ResourcesSection() {
       date: "5 de Janeiro, 2025",
       title: "IA Multimodal: Redução de 50% no Tempo de Lançamento",
       description: "Como a integração de texto, imagem e áudio está revolucionando o desenvolvimento de produtos e reduzindo custos em 30%.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80",
       categoryColor: "bg-amber-500"
     }
   ];
@@ -96,6 +96,7 @@ export default function ResourcesSection() {
                 src={post.image}
                 alt={post.title}
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" 
+                loading="lazy"
               />
               
               <div className="p-6">
