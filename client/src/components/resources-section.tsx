@@ -113,11 +113,18 @@ export default function ResourcesSection() {
                   {post.description}
                 </p>
                 <button 
-                  onClick={() => {
+                  onClick={(e) => {
+                    e.preventDefault();
+                    console.log('Botão clicado - tentando ir para seção contact');
                     const element = document.getElementById('contact');
-                    element?.scrollIntoView({ behavior: 'smooth' });
+                    console.log('Elemento encontrado:', element);
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                      console.error('Elemento contact não encontrado');
+                    }
                   }}
-                  className="text-blue-600 font-medium hover:text-blue-700 transition-colors duration-300 flex items-center"
+                  className="text-blue-600 font-medium hover:text-blue-700 transition-colors duration-300 flex items-center cursor-pointer"
                 >
                   Saiba Mais <ArrowRight className="ml-1 w-4 h-4" />
                 </button>
