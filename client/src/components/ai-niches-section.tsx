@@ -145,7 +145,13 @@ export default function AINichesSection() {
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-gray-200">
-                  <button className="w-full text-yum-turquoise font-semibold text-sm hover:text-yum-dark transition-colors duration-300">
+                  <button 
+                    onClick={() => {
+                      const element = document.getElementById('contact');
+                      element?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                    className="w-full text-yum-turquoise font-semibold text-sm hover:text-yum-dark transition-colors duration-300"
+                  >
                     Ver Casos de Sucesso →
                   </button>
                 </div>

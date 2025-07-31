@@ -57,7 +57,8 @@ export default function ResourcesSection() {
       title: "Agentes de IA Autônomos: O Futuro da Automação Empresarial",
       description: "Descubra como os agentes de IA que executam tarefas complexas sem supervisão estão transformando a gestão empresarial em 2025.",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80",
-      categoryColor: "bg-blue-600"
+      categoryColor: "bg-blue-600",
+      url: "https://blog.yumia.com.br/agentes-ia-autonomos-futuro-automacao-empresarial"
     },
     {
       category: "Hiperautomação",
@@ -65,7 +66,8 @@ export default function ResourcesSection() {
       title: "80% das Empresas Adotarão Automação Inteligente até 2025",
       description: "Análise das tendências que levam à adoção massiva da hiperautomação e como sua empresa pode se preparar.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80",
-      categoryColor: "bg-emerald-500"
+      categoryColor: "bg-emerald-500",
+      url: "https://blog.yumia.com.br/empresas-adotarao-automacao-inteligente-2025"
     },
     {
       category: "IA Multimodal",
@@ -73,7 +75,8 @@ export default function ResourcesSection() {
       title: "IA Multimodal: Redução de 50% no Tempo de Lançamento",
       description: "Como a integração de texto, imagem e áudio está revolucionando o desenvolvimento de produtos e reduzindo custos em 30%.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80",
-      categoryColor: "bg-amber-500"
+      categoryColor: "bg-amber-500",
+      url: "https://blog.yumia.com.br/ia-multimodal-reducao-tempo-lancamento"
     }
   ];
 
@@ -112,7 +115,10 @@ export default function ResourcesSection() {
                 <p className="text-gray-600 mb-4">
                   {post.description}
                 </p>
-                <button className="text-blue-600 font-medium hover:text-blue-700 transition-colors duration-300 flex items-center">
+                <button 
+                  onClick={() => window.open(post.url, '_blank')}
+                  className="text-blue-600 font-medium hover:text-blue-700 transition-colors duration-300 flex items-center"
+                >
                   Ler mais <ArrowRight className="ml-1 w-4 h-4" />
                 </button>
               </div>
