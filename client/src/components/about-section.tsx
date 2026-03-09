@@ -66,10 +66,9 @@ export default function AboutSection() {
           
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450&q=80" 
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
               alt="Ambiente de escritório moderno com colaboração em equipe" 
               className="rounded-2xl shadow-lg w-full" 
-              loading="lazy"
             />
             
             {/* Values Card */}

@@ -51,16 +51,6 @@ export default {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
-        yum: {
-          dark: "hsl(var(--yum-dark))",
-          turquoise: "hsl(var(--yum-turquoise))",
-          white: "hsl(var(--yum-white))",
-          primary: "hsl(var(--yum-primary))",
-          secondary: "hsl(var(--yum-secondary))",
-          accent: "hsl(var(--yum-accent))",
-          light: "hsl(var(--yum-light))",
-          gray: "hsl(var(--yum-gray))",
-        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

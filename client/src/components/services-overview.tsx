@@ -79,13 +79,7 @@ export default function ServicesOverview() {
                   ))}
                 </div>
                 
-                <Button 
-                  onClick={() => {
-                    const element = document.getElementById('contact');
-                    element?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className={`w-full bg-gradient-to-r ${service.color} text-white hover:opacity-90 transition-opacity duration-300`}
-                >
+                <Button className={`w-full bg-gradient-to-r ${service.color} text-white hover:opacity-90 transition-opacity duration-300`}>
                   Saiba Mais
                 </Button>
               </div>

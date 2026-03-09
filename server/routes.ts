@@ -1,9 +1,8 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertContactSchema, insertEbookDownloadSchema } from "../shared/schema";
+import { insertContactSchema, insertEbookDownloadSchema } from "@shared/schema";
 import { z } from "zod";
-import { getChatResponse } from "./openai";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission
@@ -72,29 +71,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.status(500).json({ 
         success: false, 
         message: "Erro ao buscar downloads" 
-      });
-    }
-  });
-
-  // Chatbot endpoint
-  app.post("/api/chat", async (req, res) => {
-    try {
-      const { message } = req.body;
-      
-      if (!message || typeof message !== 'string') {
-        return res.status(400).json({ 
-          success: false, 
-          message: "Mensagem é obrigatória" 
-        });
-      }
-
-      const response = await getChatResponse(message);
-      res.json({ success: true, response });
-    } catch (error) {
-      console.error("Erro no chatbot:", error);
-      res.status(500).json({ 
-        success: false, 
-        message: "Erro interno do servidor" 
       });
     }
   });

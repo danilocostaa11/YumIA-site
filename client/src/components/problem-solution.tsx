@@ -1,97 +1,109 @@
-import { X, Check } from "lucide-react";
+import { motion } from "framer-motion";
+import { XCircle, CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function ProblemSolution() {
   const problems = [
-    {
-      title: "Processos Manuais Ineficientes",
-      description: "Equipes gastam horas em tarefas repetitivas que poderiam ser automatizadas"
-    },
-    {
-      title: "Falta de Visibilidade de Dados",
-      description: "Decisões baseadas em intuição ao invés de dados precisos e insights acionáveis"
-    },
-    {
-      title: "Medo da Complexidade da IA",
-      description: "Empresas querem inovar mas não sabem por onde começar ou temem investimentos sem retorno"
-    },
-    {
-      title: "Concorrência Mais Ágil",
-      description: "Competidores ganham vantagem usando tecnologia enquanto você fica para trás"
-    }
+    "Processos manuais lentos e propensos a erros",
+    "Falta de insights baseados em dados reais",
+    "Dificuldade em escalar operações sem custos astronômicos",
+    "Equipes sobrecarregadas com tarefas repetitivas"
   ];
 
   const solutions = [
-    {
-      title: "Diagnóstico Preciso",
-      description: "Identificamos exatamente onde sua empresa pode ganhar eficiência e reduzir custos"
-    },
-    {
-      title: "Implementação Personalizada",
-      description: "Soluções de IA sob medida para suas necessidades específicas com ROI garantido"
-    },
-    {
-      title: "Acompanhamento Contínuo",
-      description: "Monitoramento e otimização constante para maximizar resultados ao longo do tempo"
-    }
+    "Automação inteligente de fluxos de trabalho",
+    "Dashboards preditivos e análise avançada",
+    "Escalabilidade digital com baixo custo operacional",
+    "IA como copiloto para aumentar a produtividade"
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-yum-dark mb-6">
-            Por que sua empresa precisa da YumIA?
-          </h2>
-          <p className="text-xl text-yum-gray max-w-3xl mx-auto">
-            Empresas que não adotam IA ficam para trás. Nós simplificamos a complexidade e entregamos resultados mensuráveis.
-          </p>
+    <section id="problem" className="py-24 bg-slate-950 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-20">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-5xl font-black text-white mb-6"
+          >
+            O Cenário Atual vs. <span className="text-blue-500 italic">O Futuro</span>
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-slate-400 text-lg max-w-2xl mx-auto"
+          >
+            Muitas empresas ainda operam no passado. A YumIA traz as ferramentas do amanhã para resolver os gargalos de hoje.
+          </motion.p>
         </div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Problems */}
-          <div>
-            <h3 className="text-2xl font-bold text-red-600 mb-8">Desafios Comuns das Empresas</h3>
-            
-            <div className="space-y-6">
-              {problems.map((problem, index) => (
-                <div key={index} className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <X className="w-4 h-4 text-red-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">{problem.title}</h4>
-                    <p className="text-gray-600">{problem.description}</p>
-                  </div>
-                </div>
-              ))}
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+          {/* Problems Card */}
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-slate-900/50 backdrop-blur-sm border border-red-500/10 p-8 md:p-12 rounded-[2rem] shadow-2xl relative group"
+          >
+            <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+              <XCircle className="w-24 h-24 text-red-500" />
             </div>
-          </div>
-          
-          {/* Solutions */}
-          <div>
-            <h3 className="text-2xl font-bold text-yum-turquoise mb-8">Nossa Solução Estratégica</h3>
-            
-            <img 
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300&q=80" 
-              alt="Otimização de processos de negócio com IA" 
-              className="rounded-xl shadow-lg mb-8 w-full h-48 object-cover" 
-              loading="lazy"
-            />
-            
-            <div className="space-y-6">
-              {solutions.map((solution, index) => (
-                <div key={index} className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <Check className="w-4 h-4 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">{solution.title}</h4>
-                    <p className="text-gray-600">{solution.description}</p>
-                  </div>
-                </div>
+            <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
+              <span className="w-8 h-8 rounded-lg bg-red-500/20 flex items-center justify-center mr-3">
+                <XCircle className="w-5 h-5 text-red-500" />
+              </span>
+              Gargalos Atuais
+            </h3>
+            <ul className="space-y-6">
+              {problems.map((text, i) => (
+                <li key={i} className="flex items-start text-slate-400">
+                  <span className="text-red-500 mr-3 mt-1">•</span>
+                  <span className="text-lg">{text}</span>
+                </li>
               ))}
+            </ul>
+          </motion.div>
+
+          {/* Solutions Card */}
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-blue-600 p-8 md:p-12 rounded-[2rem] shadow-[0_0_50px_rgba(37,99,235,0.3)] relative group overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 p-8 opacity-20 group-hover:opacity-40 transition-opacity">
+              <CheckCircle2 className="w-24 h-24 text-white" />
             </div>
-          </div>
+            
+            {/* Decorative circles */}
+            <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
+            
+            <div className="relative z-10">
+              <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
+                <span className="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center mr-3">
+                  <CheckCircle2 className="w-5 h-5 text-white" />
+                </span>
+                Solução YumIA
+              </h3>
+              <ul className="space-y-6 mb-10">
+                {solutions.map((text, i) => (
+                  <li key={i} className="flex items-start text-blue-50">
+                    <CheckCircle2 className="w-6 h-6 text-amber-400 mr-3 mt-0.5 shrink-0" />
+                    <span className="text-lg font-medium">{text}</span>
+                  </li>
+                ))}
+              </ul>
+              <button 
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="inline-flex items-center text-white font-black text-lg group/btn"
+              >
+                Começar Transformação 
+                <ArrowRight className="ml-2 w-6 h-6 group-hover/btn:translate-x-2 transition-transform" />
+              </button>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
