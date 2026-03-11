@@ -60,12 +60,8 @@ if (!process.env.VERCEL) {
       await setupVite(app, server);
     }
 
-    const port = process.env.PORT || 5000;
-    server.listen({
-      port,
-      host: "0.0.0.0",
-      reusePort: true,
-    }, () => {
+    const port = process.env.PORT || 5001;
+    server.listen(port, "0.0.0.0", () => {
       log(`serving on port ${port}`);
     });
   })();
