@@ -33,7 +33,7 @@ export default function ContactSection() {
 
             <div className="space-y-8">
               {[
-                { icon: <Phone className="w-6 h-6" />, label: "Telefone", value: "+55 (11) 99999-9999" },
+                { icon: <Phone className="w-6 h-6" />, label: "Telefone", value: "+55 (11) 96418-0674" },
                 { icon: <Mail className="w-6 h-6" />, label: "E-mail", value: "contato@yumia.com.br" },
                 { icon: <MapPin className="w-6 h-6" />, label: "Escritório", value: "São Paulo, SP - Brasil" }
               ].map((item, i) => (

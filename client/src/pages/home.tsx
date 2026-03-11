@@ -334,7 +334,7 @@ export default function Home() {
             </div>
             <div className="form-row">
               {[
-                { name: 'whatsapp', label: 'WhatsApp', placeholder: '+55 (11) 9 9999-9999' },
+                { name: 'whatsapp', label: 'WhatsApp', placeholder: '+55 (11) 96418-0674' },
                 { name: 'email', label: 'E-mail corporativo', placeholder: 'voce@empresa.com.br' },
               ].map(f => (
                 <div key={f.name} className="form-field">
@@ -362,49 +362,48 @@ export default function Home() {
           </form>
 
           <div className="contact-info">
-            {[
-              { icon: '📞', label: 'Telefone', value: '+55 (11) 98474-5005' },
-              { icon: '✉️', label: 'E-mail', value: 'contato@yumia.com.br' },
-              { icon: '📍', label: 'Local', value: 'São Paulo, SP' },
-            ].map((c, i) => (
-              <div key={i} className="contact-item">
-                <p className="contact-icon">{c.icon}</p>
-                <p className="contact-label" style={{ color: C.muted }}>{c.label}</p>
-                <p className="contact-value" style={{ color: C.text }}>{c.value}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── FOOTER ────────────────────────────────────────── */}
-      <footer className="site-footer" style={{ background: '#04040A', borderTop: `1px solid ${C.border}` }}>
-        <div className="footer-inner">
-          <a href="/" className="footer-logo">
-            <img src="/YumIA_logo.svg" alt="YumIA" width={32} height={32} />
-            <div>
-              <p className="footer-name" style={{ color: C.gold }}>YumIA</p>
-              <p className="footer-tag" style={{ color: C.muted }}>Infraestrutura de Crescimento com IA</p>
+          {[
+            { icon: '📞', label: 'Telefone', value: '+55 (11) 96418-0674' },
+            { icon: '✉️', label: 'E-mail', value: 'contato@yumia.com.br' },
+            { icon: '📍', label: 'Local', value: 'São Paulo, SP' },
+          ].map((c, i) => (
+            <div key={i} className="contact-item">
+              <p className="contact-icon">{c.icon}</p>
+              <p className="contact-label" style={{ color: C.muted }}>{c.label}</p>
+              <p className="contact-value" style={{ color: C.text }}>{c.value}</p>
             </div>
+          ))}
+          </div>
+          </div>
+          </section>
+
+          {/* ── FOOTER ────────────────────────────────────────── */}
+          <footer className="site-footer" style={{ background: '#04040A', borderTop: `1px solid ${C.border}` }}>
+          <div className="footer-inner">
+          <a href="/" className="footer-logo">
+          <img src="/YumIA_logo.svg" alt="YumIA" width={32} height={32} />
+          <div>
+            <p className="footer-name" style={{ color: C.gold }}>YumIA</p>
+            <p className="footer-tag" style={{ color: C.muted }}>Infraestrutura de Crescimento com IA</p>
+          </div>
           </a>
           <div className="footer-links">
-            <a href="#problema">O Problema</a>
-            <a href="#metodo">Método MAPA</a>
-            <a href="#calculadora">Calculadora ROI</a>
-            <a href="#contato">Contato</a>
+          <a href="#problema">O Problema</a>
+          <a href="#metodo">Método MAPA</a>
+          <a href="#calculadora">Calculadora ROI</a>
+          <a href="#contato">Contato</a>
           </div>
           <p className="footer-copy" style={{ color: '#2A2A3A' }}>
-            © {new Date().getFullYear()} YumIA · Todos os direitos reservados
+          © {new Date().getFullYear()} YumIA · Todos os direitos reservados
           </p>
-        </div>
-      </footer>
+          </div>
+          </footer>
 
-      {/* ── WHATSAPP FLOATING BUTTON ──────────────────────── */}
-      <a 
-        href="https://wa.me/5511984745005?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20YumIA." 
-        target="_blank" 
-        rel="noopener noreferrer"
-        style={{
+          {/* ── WHATSAPP FLOATING BUTTON ──────────────────────── */}
+          <a 
+          href="https://wa.me/5511964180674?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20YumIA." 
+          target="_blank" 
+          rel="noopener noreferrer"        style={{
           position: 'fixed',
           bottom: '2rem',
           right: '2rem',
