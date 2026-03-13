@@ -132,7 +132,7 @@ export default function Home() {
       <section className="section-padded" style={{ background: C.bg }}>
         <div className="container">
           <div className="section-header">
-            <SectionTag>Não vendemos ferramenta. No vendemos chatbot.</SectionTag>
+            <SectionTag>Não vendemos ferramenta. Não vendemos chatbot.</SectionTag>
             <h2 className="section-h2" style={{ color: C.white }}>
               Instalamos uma máquina de<br />faturamento na sua operação.
             </h2>
@@ -333,7 +333,7 @@ export default function Home() {
                 <p className="section-tag" style={{ marginBottom: '1.5rem' }}>Stack tecnológico</p>
                 <div className="tech-grid">
                   {[
-                    ['⚙️', 'n8n / Make',      'Fluxos e integrações'],
+                    ['🤖', 'n8n / Make',      'Fluxos e integrações'],
                     ['💬', 'WhatsApp API',     'Atendimento 24/7'],
                     ['🧠', 'OpenAI / Claude',  'IA conversacional'],
                     ['📋', 'CRM Integrado',    'Seu sistema atual'],
@@ -396,7 +396,7 @@ export default function Home() {
             </div>
             <div className="form-row">
               {[
-                { name: 'whatsapp', label: 'WhatsApp',        placeholder: '+55 (11) 96418-0674' },
+                { name: 'whatsapp', label: 'WhatsApp',        placeholder: '+55 (11) 9 9999-9999' },
                 { name: 'email',    label: 'E-mail',           placeholder: 'voce@empresa.com.br' },
               ].map(f => (
                 <div key={f.name} className="form-field">
@@ -426,7 +426,7 @@ export default function Home() {
 
           <div className="contact-info">
             {[
-              { icon: '📞', label: 'Telefone', value: '+55 (11) 96418-0674' },
+              { icon: '📞', label: 'Telefone', value: '+55 (11) 99999-9999' },
               { icon: '✉️', label: 'E-mail',   value: 'contato@yumia.com.br' },
               { icon: '📍', label: 'Local',     value: 'São Paulo, SP' },
             ].map((c, i) => (
@@ -462,34 +462,6 @@ export default function Home() {
           </p>
         </div>
       </footer>
-
-      {/* ── WHATSAPP FLOATING BUTTON ──────────────────────── */}
-      <a 
-        href="https://wa.me/5511964180674?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20YumIA." 
-        target="_blank" 
-        rel="noopener noreferrer"
-        style={{
-          position: 'fixed',
-          bottom: '2rem',
-          right: '2rem',
-          width: '60px',
-          height: '60px',
-          background: '#25D366',
-          borderRadius: '50%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
-          zIndex: 1000,
-          transition: 'transform 0.3s ease',
-        }}
-        onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
-        onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-      >
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
-          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.001.332.005c.109.004.253-.041.397.303.145.348.492 1.201.535 1.288.044.087.073.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z" />
-        </svg>
-      </a>
 
     </main>
   )
