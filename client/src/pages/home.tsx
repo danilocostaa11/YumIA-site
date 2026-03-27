@@ -40,11 +40,11 @@ export default function Home() {
           <span className="nav-wordmark" style={{ color: C.gold }}>YumIA</span>
         </a>
         <div className="nav-links">
-          {[['#problema','O Problema'],['#metodo','Método'],['#segmentos','Segmentos'],['#calculadora','ROI'],['#contato','Contato']].map(([href, label]) => (
+          {[["#problema","Vazamentos"],["#metodo","Método"],["#segmentos","Segmentos"],["#calculadora","ROI"],["#contato","Contato"]].map(([href, label]) => (
             <a key={href} href={href} className="nav-link" style={{ color: C.muted }}>{label}</a>
           ))}
         </div>
-        <a href="#contato" className="btn-primary">Diagnóstico Gratuito</a>
+        <a href="#contato" className="btn-primary">Mapear Minha Operação</a>
       </nav>
 
       {/* ── HERO ──────────────────────────────────────────── */}
@@ -54,23 +54,23 @@ export default function Home() {
 
         <div className="hero-inner">
           <div>
-            <SectionTag>Para negócios que querem crescer sem contratar mais</SectionTag>
+            <SectionTag>Para empresas que querem crescer sem continuar perdendo oportunidade no caminho</SectionTag>
 
             <h1 className="hero-h1" style={{ color: C.white }}>
-              Você não precisa<br />de mais leads.
+              O problema da sua empresa<br />talvez não seja falta de demanda.
             </h1>
             <h2 className="hero-h2" style={{ color: C.gold }}>
-              Você precisa extrair o dinheiro<br />que já está na sua base.
+              É dinheiro escapando todos os dias<br />sem ninguém perceber.
             </h2>
             <p className="hero-body" style={{ color: C.muted }}>
-              A YumIA instala uma infraestrutura de IA que transforma contatos adormecidos,
-              follow-ups perdidos e oportunidades esquecidas em faturamento real —
-              sem anúncios adicionais, sem aumentar o time.
+              A YumIA instala sites, automações, atendimento com IA, sistemas e dashboards
+              para eliminar vazamentos comerciais, acelerar resposta, recuperar oportunidades
+              e transformar operação desorganizada em crescimento com controle.
             </p>
 
             <div className="hero-ctas">
               <a href="#contato" className="btn-primary btn-pulse">
-                Quero ver o potencial da minha operação →
+                Quero descobrir onde estou perdendo dinheiro →
               </a>
               <a href="#metodo" className="btn-ghost" style={{ color: C.muted }}>
                 Ver como funciona
@@ -81,10 +81,10 @@ export default function Home() {
           {/* Hero stats */}
           <div className="hero-stats-grid">
             {[
-              { num: '8×',      label: 'Mais conversão com resposta em menos de 5 min', sub: 'Benchmark de mercado' },
-              { num: '2,5%',    label: 'Taxa mínima de reativação de base inativa',      sub: 'Conservador' },
-              { num: '+40%',    label: 'Aumento médio de receita nos primeiros 90 dias', sub: 'Clientes YumIA' },
-              { num: '60–90d',  label: 'Payback médio da infraestrutura',                sub: 'Estimativa' },
+              { num: 'Resposta', label: 'Quando o lead esfria, a venda morre rápido', sub: 'Velocidade importa' },
+              { num: 'Base antiga', label: 'Receita esquecida que quase ninguém trabalha', sub: 'Cliente antigo ainda vale ouro' },
+              { num: 'Processo manual', label: 'Tempo caro sendo queimado em tarefa repetitiva', sub: 'Equipe ocupada não é equipe produtiva' },
+              { num: 'Dados claros', label: 'O que separa crescimento de improviso', sub: 'Quem enxerga decide melhor' },
             ].map((s, i) => (
               <div key={i} className="stat-card" style={{ background: C.panel, border: `1px solid ${C.border}` }}>
                 <p className="stat-number" style={{ color: C.gold }}>{s.num}</p>
@@ -100,21 +100,38 @@ export default function Home() {
       <section id="problema" className="section-padded" style={{ background: '#09091a' }}>
         <div className="container">
           <div className="section-header">
-            <SectionTag>A realidade da maioria das operações comerciais</SectionTag>
+            <SectionTag>O que mais trava crescimento hoje</SectionTag>
             <h2 className="section-h2" style={{ color: C.white }}>
-              Sua operação tem<br />dinheiro escondido.
+              Sua operação pode estar<br />vazando receita em silêncio.
             </h2>
             <p className="section-lead" style={{ color: C.muted }}>
-              Não é falta de lead. É falta de infraestrutura para aproveitar o que já chegou até você.
+              O dinheiro raramente some por um motivo só. Normalmente ele escapa em vários pontos pequenos:
+              atendimento lento, presença fraca, base esquecida e gestão sem visibilidade.
             </p>
           </div>
 
           <div className="grid-2">
             {[
-              { icon: '⚰️', title: 'O Cemitério de Contatos',         body: 'Sua base tem centenas — talvez milhares — de contatos que ficaram sem resposta após 24 horas. Cada um custou tempo e dinheiro para chegar. A maioria nunca foi reabordada.' },
-              { icon: '⏱️', title: 'A Equipe no Lugar Errado',         body: 'Mais de 60% do tempo da equipe vai para tarefas operacionais: triagem, follow-up manual, agendamento, respostas repetitivas. O que sobra para gerar receita é pouco.' },
-              { icon: '🌙', title: 'O Lead que Foi para o Concorrente', body: 'Contatos que chegam fora do horário comercial ficam sem resposta. Responder em menos de 5 minutos aumenta 8× a conversão. Responder no dia seguinte: quase zero.' },
-              { icon: '📊', title: 'A Gestão no Escuro',               body: 'Sem visibilidade real do funil, decisões são tomadas por intuição. Quais oportunidades estão quentes? Onde os negócios morrem? Ninguém sabe ao certo.' },
+              {
+                icon: '🔍',
+                title: 'Você não convence com força onde o cliente procura',
+                body: 'Site fraco, presença digital mal posicionada e comunicação genérica fazem sua empresa perder autoridade antes mesmo da conversa começar.'
+              },
+              {
+                icon: '⏱️',
+                title: 'O interesse chega quente e esfria rápido',
+                body: 'Lead não espera boa vontade. Quando a resposta demora, a chance cai, o concorrente entra e a oportunidade some.'
+              },
+              {
+                icon: '💤',
+                title: 'Sua base antiga virou dinheiro parado',
+                body: 'Clientes que já confiaram em você custam menos para reativar, voltam mais rápido e ainda podem indicar. Mesmo assim, quase sempre ficam abandonados.'
+              },
+              {
+                icon: '📉',
+                title: 'A empresa cresce no escuro',
+                body: 'Sem dashboard, sem funil claro e sem métricas vivas, decisão vira sensação. E sensação custa caro.'
+              },
             ].map((item, i) => (
               <div key={i} className="pain-card" style={{ background: C.panel, border: `1px solid ${C.border}`, borderLeft: '3px solid #E0555530' }}>
                 <span className="pain-icon">{item.icon}</span>
@@ -132,34 +149,35 @@ export default function Home() {
       <section className="section-padded" style={{ background: C.bg }}>
         <div className="container">
           <div className="section-header">
-            <SectionTag>Não vendemos ferramenta. No vendemos chatbot.</SectionTag>
+            <SectionTag>O que a YumIA instala na operação</SectionTag>
             <h2 className="section-h2" style={{ color: C.white }}>
-              Instalamos uma máquina de<br />faturamento na sua operação.
+              Não vendemos ferramenta.<br />Construímos estrutura para crescer.
             </h2>
             <p className="section-lead" style={{ color: C.muted }}>
-              Nossa entrega é medida em reais, não em horas ou funcionalidades.
+              Em vez de soluções soltas, conectamos presença, conversão e gestão para sua empresa vender melhor,
+              operar com menos atrito e escalar com mais clareza.
             </p>
           </div>
 
           <div className="grid-3">
             {[
               {
-                nome: 'Atendimento Inteligente 24/7',
-                resultado: 'Zero contatos perdidos por horário',
-                body: 'IA responde instantaneamente, qualifica por perfil e intenção, agenda reuniões e entrega o contato à equipe somente quando está pronto para avançar.',
-                tags: ['Resposta < 60 seg', 'Qualificação automática', 'Integração CRM'],
+                nome: 'Atrair melhor',
+                resultado: 'Mais autoridade, mais confiança, mais entrada qualificada',
+                body: 'Sites estratégicos, landing pages e presença digital para posicionar melhor sua empresa e fazer o cliente chegar mais preparado para comprar.',
+                tags: ['Site estratégico', 'Landing page', 'Google otimizado'],
               },
               {
-                nome: 'Automação de Funil Completo',
-                resultado: '80% menos trabalho operacional',
-                body: 'Follow-ups automáticos no timing certo, propostas geradas em 1 clique e alertas inteligentes para a equipe focar onde importa: fechar negócio.',
-                tags: ['Follow-ups automáticos', 'Alertas de oportunidade', 'Relatório em tempo real'],
+                nome: 'Responder mais rápido',
+                resultado: 'Menos lead perdido, mais oportunidade aproveitada',
+                body: 'IA no WhatsApp, automação comercial, triagem e agendamento para responder com velocidade e deixar sua equipe focada em fechar.',
+                tags: ['WhatsApp com IA', 'Qualificação automática', 'Agendamento inteligente'],
               },
               {
-                nome: 'Reativação de Base Inativa',
-                resultado: 'Receita que já estava na sua base',
-                body: 'Campanha inteligente para contatos que chegaram e nunca converteram. Com personalização por IA, a taxa de resposta é 3× a 5× maior que campanhas genéricas.',
-                tags: ['Segmentação por IA', 'Mensagens personalizadas', 'Funil de reengajamento'],
+                nome: 'Escalar com controle',
+                resultado: 'Mais visibilidade operacional, menos improviso',
+                body: 'Dashboards, reativação de base, sistemas e automações sob medida para reduzir retrabalho, aumentar previsibilidade e organizar crescimento.',
+                tags: ['Dashboard em tempo real', 'Reativação de base', 'Sistema sob medida'],
               },
             ].map((s, i) => (
               <div key={i} className="service-card" style={{ background: C.panel, border: `1px solid ${C.border}` }}>
@@ -188,21 +206,22 @@ export default function Home() {
       <section id="metodo" className="section-padded" style={{ background: '#09091a' }}>
         <div className="container">
           <div className="section-header">
-            <SectionTag>Metodologia exclusiva</SectionTag>
+            <SectionTag>Método proprietário</SectionTag>
             <h2 className="section-h2" style={{ color: C.white }}>
               Método <span style={{ color: C.gold }}>MAPA</span>
             </h2>
             <p className="section-lead" style={{ color: C.muted }}>
-              Do diagnóstico ao resultado em 5 semanas. Cada etapa é validada com você antes de avançar.
+              Antes de falar em ferramenta, mostramos onde a operação está travando, o que faz sentido atacar primeiro
+              e como construir uma estrutura que gere impacto real.
             </p>
           </div>
 
           <div className="grid-4">
             {[
-              { l: 'M', nome: 'Mapeamento',   time: 'Semana 1',   body: 'Diagnóstico da operação, mapeamento dos gargalos e cálculo do ROI potencial. Você vê o número antes de qualquer compromisso.' },
-              { l: 'A', nome: 'Arquitetura',  time: 'Semana 2',   body: 'Desenho personalizado: quais automações, integrações e fluxos. Você aprova o plano antes de avançar.' },
-              { l: 'P', nome: 'Prototipagem', time: 'Semanas 3–5', body: 'Implementação progressiva. A equipe já usa e já vê resultados enquanto a infraestrutura é finalizada.' },
-              { l: 'A', nome: 'Aceleração',   time: 'Contínuo',   body: 'Monitoramento de ROI, refinamento e expansão. Nosso sucesso é medido pelo seu crescimento.' },
+              { l: 'M', nome: 'Mapeamento', time: 'Semana 1', body: 'Analisamos demanda, atendimento, base, processo comercial e operação para identificar os vazamentos que mais custam hoje.' },
+              { l: 'A', nome: 'Arquitetura', time: 'Semana 2', body: 'Desenhamos a estrutura ideal para o momento da empresa: o que entra primeiro, o que gera impacto mais rápido e o que sustenta escala.' },
+              { l: 'P', nome: 'Prototipagem', time: 'Semanas 3–5', body: 'Implementamos as primeiras entregas com velocidade para você começar a sentir ganho prático enquanto a estrutura é construída.' },
+              { l: 'A', nome: 'Aceleração', time: 'Contínuo', body: 'Ajustamos com base em dados reais, ampliamos o que funciona e transformamos melhoria pontual em rotina de crescimento.' },
             ].map((m, i) => (
               <div key={i} className="mapa-card" style={{ background: C.panel, border: `1px solid ${C.border}` }}>
                 <span className="mapa-letter-bg" style={{ color: C.gold }}>{m.l}</span>
@@ -220,13 +239,13 @@ export default function Home() {
       <section id="segmentos" className="section-padded" style={{ background: C.bg }}>
         <div className="container">
           <div className="section-header">
-            <SectionTag>Expertise por segmento</SectionTag>
+            <SectionTag>Estrutura aplicada ao seu mercado</SectionTag>
             <h2 className="section-h2" style={{ color: C.white }}>
-              Especialistas nos segmentos<br />que mais crescem em SP.
+              A mesma lógica de crescimento.<br />Adaptada ao seu nicho.
             </h2>
             <p className="section-lead" style={{ color: C.muted }}>
-              Não somos consultoria genérica. Conhecemos as dores reais, os sistemas e os benchmarks
-              de cada mercado que atendemos.
+              A YumIA não entra com pacote genérico. Ajustamos a operação, a linguagem e a automação
+              para a realidade comercial de cada segmento.
             </p>
           </div>
 
@@ -235,27 +254,27 @@ export default function Home() {
               {
                 icon: '🏢',
                 nome: 'Imobiliárias',
-                dores: ['Leads adormecidos na base', 'Follow-up manual de corretores', 'Perda por tempo de resposta', 'Sem visibilidade do funil'],
-                stat: '+47% VGV',
-                statSub: 'crescimento com IA',
+                dores: ['Lead sem follow-up', 'Captação desorganizada', 'Corretores sem processo claro', 'Funil pouco visível'],
+                stat: 'Captação',
+                statSub: 'mais organizada e previsível',
                 link: 'https://imoveis.yumia.com.br',
                 cta: 'Ver solução para imobiliárias',
               },
               {
                 icon: '⚖️',
                 nome: 'Escritórios de Advocacia',
-                dores: ['Consultas perdidas fora do horário', 'Triagem manual e cara', 'Clientes inativos sem reativação', 'Advogado fazendo trabalho admin'],
-                stat: '3× conversão',
-                statSub: 'com resposta < 15 min',
+                dores: ['Consulta perdida fora do horário', 'Triagem manual e cara', 'Base antiga esquecida', 'Equipe técnica consumida por operação'],
+                stat: 'Atendimento',
+                statSub: 'mais rápido e qualificado',
                 link: 'https://advogados.yumia.com.br',
                 cta: 'Ver solução para advocacia',
               },
               {
                 icon: '🏥',
-                nome: 'Médicos e Clínicas',
-                dores: ['No-show sem gestão ativa', 'Pacientes inativos não reativados', 'Agendamento fora do horário', 'Recepção sobrecarregada'],
-                stat: '−65% no-show',
-                statSub: 'com confirmação automática',
+                nome: 'Clínicas e Consultórios',
+                dores: ['Recepção sobrecarregada', 'Pacientes inativos sem ação', 'Agendamento lento', 'Operação sem painel claro'],
+                stat: 'Rotina',
+                statSub: 'mais fluida e controlada',
                 link: 'https://medicos.yumia.com.br',
                 cta: 'Ver solução para clínicas',
               },
@@ -278,10 +297,23 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <a href={seg.link} target="_blank" rel="noopener noreferrer"
-                  style={{ marginTop: 'auto', display: 'block', textAlign: 'center', padding: '0.6rem 1rem',
-                    border: `1px solid ${C.gold}40`, borderRadius: '0.5rem', color: C.gold,
-                    fontSize: '0.8rem', fontWeight: 600, transition: 'all 150ms' }}>
+                <a
+                  href={seg.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    marginTop: 'auto',
+                    display: 'block',
+                    textAlign: 'center',
+                    padding: '0.6rem 1rem',
+                    border: `1px solid ${C.gold}40`,
+                    borderRadius: '0.5rem',
+                    color: C.gold,
+                    fontSize: '0.8rem',
+                    fontWeight: 600,
+                    transition: 'all 150ms'
+                  }}
+                >
                   {seg.cta} →
                 </a>
               </div>
@@ -300,17 +332,26 @@ export default function Home() {
             <div>
               <SectionTag>Por que a YumIA</SectionTag>
               <h2 className="section-h2" style={{ color: C.white, marginBottom: '2rem' }}>
-                O mercado está cheio de<br />ferramentas. Nós entregamos resultado.
+                Ferramenta solta não resolve.<br />Estrutura com lógica comercial resolve.
               </h2>
               <p className="section-lead" style={{ color: C.muted, marginBottom: '2rem' }}>
-                O mercado está cheio de quem vende chatbot, prompt e ferramentas isoladas.
-                A YumIA faz algo diferente.
+                O mercado já está cheio de promessa bonita, automação sem direção e tecnologia que não conversa com a operação.
+                A YumIA conecta tudo com um objetivo: fazer a empresa crescer melhor.
               </p>
 
               {[
-                { titulo: 'Vendemos faturamento, não ferramenta',  desc: 'Nossa entrega é medida em receita gerada e negócios fechados — não em horas de consultoria ou automações instaladas.' },
-                { titulo: 'Especialistas no seu segmento',         desc: 'Conhecemos as dores reais de cada mercado que atendemos. Não aplicamos template — aplicamos solução.' },
-                { titulo: 'Resultado antes do contrato',           desc: 'No Mapeamento, você recebe um diagnóstico com o ROI potencial antes de qualquer compromisso maior. Você decide com dados.' },
+                {
+                  titulo: 'Pensamos em resultado, não em enfeite',
+                  desc: 'Cada entrega precisa cumprir uma função clara: atrair, converter, organizar ou escalar. Se não mexe no ponteiro, não entra.'
+                },
+                {
+                  titulo: 'Tudo nasce integrado',
+                  desc: 'Site, automação, IA, dashboard, sistema e rotina comercial são pensados juntos. Sem remendo. Sem gambiarra digital.'
+                },
+                {
+                  titulo: 'Visão comercial + execução tecnológica',
+                  desc: 'A YumIA une experiência de operação e vendas com implementação prática. Não é tecnologia pela tecnologia. É estrutura aplicada ao crescimento.'
+                },
               ].map((d, i) => (
                 <div key={i} className="diff-card" style={{ background: C.panel, borderLeft: `3px solid ${C.gold}` }}>
                   <h3 className="card-title" style={{ color: C.white }}>{d.titulo}</h3>
@@ -321,24 +362,23 @@ export default function Home() {
 
             <div>
               <div className="mission-box" style={{ background: C.panel, border: `1px solid ${C.border}` }}>
-                <p className="section-tag" style={{ marginBottom: '1rem' }}>Nossa Missão</p>
+                <p className="section-tag" style={{ marginBottom: '1rem' }}>Nossa visão</p>
                 <p className="mission-text" style={{ color: C.muted }}>
-                  "A YumIA existe para que negócios de alto desempenho operem com a eficiência
-                  que seus resultados exigem. Acreditamos que IA não é para substituir pessoas —
-                  é para dar a elas tempo de fazer o que fazem de melhor."
+                  "A YumIA existe para ajudar empresas a operarem com a eficiência que o crescimento exige.
+                  IA não é para substituir pessoas. É para devolver velocidade, clareza e capacidade de execução."
                 </p>
               </div>
 
               <div className="tech-box" style={{ background: C.panel, border: `1px solid ${C.border}` }}>
-                <p className="section-tag" style={{ marginBottom: '1.5rem' }}>Stack tecnológico</p>
+                <p className="section-tag" style={{ marginBottom: '1.5rem' }}>Ecossistema tecnológico</p>
                 <div className="tech-grid">
                   {[
-                    ['⚙️', 'n8n / Make',      'Fluxos e integrações'],
-                    ['💬', 'WhatsApp API',     'Atendimento 24/7'],
-                    ['🧠', 'OpenAI / Claude',  'IA conversacional'],
-                    ['📋', 'CRM Integrado',    'Seu sistema atual'],
-                    ['🐍', 'Python',           'Automações customizadas'],
-                    ['📅', 'Google Calendar',  'Agendamento automático'],
+                    ['⚙️', 'n8n / Make', 'Fluxos e integrações'],
+                    ['💬', 'WhatsApp API', 'Atendimento e automação'],
+                    ['🧠', 'OpenAI / Claude', 'IA conversacional'],
+                    ['📋', 'CRM Integrado', 'Continuidade operacional'],
+                    ['🐍', 'Python', 'Automações customizadas'],
+                    ['📅', 'Google Calendar', 'Agendamento inteligente'],
                   ].map(([icon, name, desc], j) => (
                     <div key={j} className="tech-item" style={{ background: C.bg, border: `1px solid ${C.border}` }}>
                       <span className="tech-icon">{icon}</span>
@@ -359,76 +399,89 @@ export default function Home() {
       <section id="contato" className="section-padded" style={{ background: C.bg }}>
         <div className="container cta-container">
           <div className="cta-badge" style={{ background: '#1a1a00', color: '#c9c050', border: '1px solid #3a3a00' }}>
-            ⚠ Atendemos um número limitado de empresas por trimestre
+            ⚠ Trabalhamos com agenda limitada para manter profundidade na implementação
           </div>
 
           <div className="cta-header">
             <h2 className="cta-h2" style={{ color: C.white }}>
-              Descubra quanto dinheiro está<br />
-              <span style={{ color: C.gold }}>adormecido na sua operação.</span>
+              Descubra onde sua empresa está<br />
+              <span style={{ color: C.gold }}>deixando dinheiro na mesa.</span>
             </h2>
             <p className="cta-lead" style={{ color: C.muted }}>
-              No Diagnóstico Estratégico Gratuito (60 min), mapeamos sua operação e apresentamos
-              o potencial de receita a recuperar com IA — sem custo e sem compromisso.
+              Em uma sessão estratégica, a YumIA analisa sua operação, identifica os gargalos mais caros
+              e mostra por onde faz sentido começar para ganhar velocidade, clareza e resultado.
             </p>
           </div>
 
           <div className="what-you-get" style={{ background: C.panel, border: `1px solid ${C.border}` }}>
             <p className="section-tag" style={{ marginBottom: '1.25rem' }}>O que você recebe na sessão</p>
-            <GreenCheck>Análise do potencial da sua base de contatos</GreenCheck>
-            <GreenCheck>Identificação dos 3 principais gargalos de receita</GreenCheck>
-            <GreenCheck>Estimativa de ROI personalizada para sua operação</GreenCheck>
-            <GreenCheck>Plano de ação com primeiras etapas claras</GreenCheck>
+            <GreenCheck>Leitura dos principais vazamentos da operação</GreenCheck>
+            <GreenCheck>Diagnóstico dos gargalos mais caros hoje</GreenCheck>
+            <GreenCheck>Direções práticas com IA, automação e dados</GreenCheck>
+            <GreenCheck>Próximos passos claros, com ou sem projeto</GreenCheck>
           </div>
 
           <form className="contact-form" style={{ background: C.panel, border: `1px solid ${C.border}` }} onSubmit={e => e.preventDefault()}>
             <div className="form-row">
               {[
-                { name: 'nome',    label: 'Nome completo',       placeholder: 'Seu nome' },
-                { name: 'empresa', label: 'Empresa / Segmento',  placeholder: 'Empresa e seu setor' },
+                { name: 'nome', label: 'Nome completo', placeholder: 'Seu nome' },
+                { name: 'empresa', label: 'Empresa / Segmento', placeholder: 'Empresa e seu setor' },
               ].map(f => (
                 <div key={f.name} className="form-field">
                   <label className="form-label" style={{ color: C.muted }}>{f.label}</label>
-                  <input name={f.name} placeholder={f.placeholder} className="form-input"
-                    style={{ background: C.bg, border: `1px solid ${C.border}`, color: C.text }} />
+                  <input
+                    name={f.name}
+                    placeholder={f.placeholder}
+                    className="form-input"
+                    style={{ background: C.bg, border: `1px solid ${C.border}`, color: C.text }}
+                  />
                 </div>
               ))}
             </div>
+
             <div className="form-row">
               {[
-                { name: 'whatsapp', label: 'WhatsApp',        placeholder: '+55 (11) 96418-0674' },
-                { name: 'email',    label: 'E-mail',           placeholder: 'voce@empresa.com.br' },
+                { name: 'whatsapp', label: 'WhatsApp', placeholder: '+55 (11) 96418-0674' },
+                { name: 'email', label: 'E-mail', placeholder: 'voce@empresa.com.br' },
               ].map(f => (
                 <div key={f.name} className="form-field">
                   <label className="form-label" style={{ color: C.muted }}>{f.label}</label>
-                  <input name={f.name} placeholder={f.placeholder} className="form-input"
-                    style={{ background: C.bg, border: `1px solid ${C.border}`, color: C.text }} />
+                  <input
+                    name={f.name}
+                    placeholder={f.placeholder}
+                    className="form-input"
+                    style={{ background: C.bg, border: `1px solid ${C.border}`, color: C.text }}
+                  />
                 </div>
               ))}
             </div>
+
             <div className="form-field" style={{ marginBottom: '1.5rem' }}>
-              <label className="form-label" style={{ color: C.muted }}>Tamanho da base de contatos</label>
+              <label className="form-label" style={{ color: C.muted }}>Qual o principal desafio hoje?</label>
               <select className="form-input" style={{ background: C.bg, border: `1px solid ${C.border}`, color: C.muted }}>
                 <option value="">Selecione...</option>
-                <option>Menos de 500 contatos</option>
-                <option>500 – 2.000 contatos</option>
-                <option>2.000 – 10.000 contatos</option>
-                <option>Mais de 10.000 contatos</option>
+                <option>Gerar mais demanda qualificada</option>
+                <option>Responder mais rápido os leads</option>
+                <option>Reativar clientes antigos</option>
+                <option>Organizar operação e funil</option>
+                <option>Criar sistema / automação sob medida</option>
               </select>
             </div>
+
             <button type="submit" className="btn-primary btn-full">
-              Quero meu Diagnóstico Estratégico Gratuito →
+              Quero meu diagnóstico estratégico →
             </button>
+
             <p className="form-fine" style={{ color: '#3A3A4A' }}>
-              60 min · Sem compromisso · Seus dados estão seguros
+              Sessão inicial sem compromisso · Clareza antes de investir
             </p>
           </form>
 
           <div className="contact-info">
             {[
               { icon: '📞', label: 'Telefone', value: '+55 (11) 96418-0674' },
-              { icon: '✉️', label: 'E-mail',   value: 'contato@yumia.com.br' },
-              { icon: '📍', label: 'Local',     value: 'São Paulo, SP' },
+              { icon: '✉️', label: 'E-mail', value: 'contato@yumia.com.br' },
+              { icon: '📍', label: 'Local', value: 'São Paulo, SP' },
             ].map((c, i) => (
               <div key={i} className="contact-item">
                 <p className="contact-icon">{c.icon}</p>
@@ -451,7 +504,7 @@ export default function Home() {
             </div>
           </a>
           <div className="footer-links">
-            <a href="#problema">O Problema</a>
+            <a href="#problema">Vazamentos</a>
             <a href="#metodo">Método MAPA</a>
             <a href="#segmentos">Segmentos</a>
             <a href="#calculadora">Calculadora ROI</a>
@@ -464,9 +517,9 @@ export default function Home() {
       </footer>
 
       {/* ── WHATSAPP FLOATING BUTTON ──────────────────────── */}
-      <a 
-        href="https://wa.me/5511964180674?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20YumIA." 
-        target="_blank" 
+      <a
+        href="https://wa.me/5511964180674?text=Ol%C3%A1!%20Quero%20entender%20onde%20minha%20opera%C3%A7%C3%A3o%20est%C3%A1%20perdendo%20dinheiro."
+        target="_blank"
         rel="noopener noreferrer"
         style={{
           position: 'fixed',

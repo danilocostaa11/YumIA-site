@@ -60,7 +60,7 @@ if (!process.env.VERCEL) {
       await setupVite(app, server);
     }
 
-    const port = process.env.PORT || 5001;
+    const port = Number(process.env.PORT) || 5001;
     server.listen(port, "0.0.0.0", () => {
       log(`serving on port ${port}`);
     });
