@@ -257,7 +257,7 @@ export default function Home() {
                 dores: ['Lead sem follow-up', 'Captação desorganizada', 'Corretores sem processo claro', 'Funil pouco visível'],
                 stat: 'Captação',
                 statSub: 'mais organizada e previsível',
-                link: 'https://imoveis.yumia.com.br',
+                link: '/imoveis',
                 cta: 'Ver solução para imobiliárias',
               },
               {
@@ -266,7 +266,7 @@ export default function Home() {
                 dores: ['Consulta perdida fora do horário', 'Triagem manual e cara', 'Base antiga esquecida', 'Equipe técnica consumida por operação'],
                 stat: 'Atendimento',
                 statSub: 'mais rápido e qualificado',
-                link: 'https://advogados.yumia.com.br',
+                link: '/advogados',
                 cta: 'Ver solução para advocacia',
               },
               {
@@ -275,7 +275,7 @@ export default function Home() {
                 dores: ['Recepção sobrecarregada', 'Pacientes inativos sem ação', 'Agendamento lento', 'Operação sem painel claro'],
                 stat: 'Rotina',
                 statSub: 'mais fluida e controlada',
-                link: 'https://medicos.yumia.com.br',
+                link: '/medicos',
                 cta: 'Ver solução para clínicas',
               },
             ].map((seg, i) => (
