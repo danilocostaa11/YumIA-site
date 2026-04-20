@@ -1,0 +1,18 @@
+# YumIA — https://yumia.com.br
+# SEO robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yumia.com.br/sitemap.xml
+
+# Páginas principais
+Allow: /
+Allow: /imoveis
+Allow: /advogados
+Allow: /medicos
+
+# Assets estáticos
+Allow: /assets/
+Allow: /YumIA_logo.svg
