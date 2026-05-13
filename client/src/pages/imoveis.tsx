@@ -92,7 +92,7 @@ export default function Imoveis() {
         <div className="hero-inner">
           <div>
             <SectionTag>Para imobiliárias e corretores em São Paulo</SectionTag>
-            <h1 className="hero-h1" style={{ color: C.white }}>
+            <h1 className="hero-h1" style={{ color: C.white }} aria-label="Sua imobiliária deixa dinheiro na mesa.">
               Sua imobiliária<br />deixa dinheiro na mesa.
             </h1>
             <h2 className="hero-h2" style={{ color: C.gold }}>

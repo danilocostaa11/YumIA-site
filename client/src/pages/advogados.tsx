@@ -75,7 +75,7 @@ export default function Advogados() {
         <div className="hero-inner">
           <div>
             <SectionTag>Para escritórios de advocacia</SectionTag>
-            <h1 className="hero-h1" style={{ color: C.white }}>
+            <h1 className="hero-h1" style={{ color: C.white }} aria-label="Seu escritório deixa clientes na mesa.">
               Seu escritório deixa<br />clientes na mesa.
             </h1>
             <h2 className="hero-h2" style={{ color: C.gold }}>

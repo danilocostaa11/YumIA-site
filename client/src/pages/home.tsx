@@ -94,7 +94,7 @@ export default function Home() {
           <div>
             <SectionTag>Para empresas que querem crescer sem continuar perdendo oportunidade no caminho</SectionTag>
 
-            <h1 className="hero-h1" style={{ color: C.white }}>
+            <h1 className="hero-h1" style={{ color: C.white }} aria-label="O problema da sua empresa talvez não seja falta de demanda.">
               O problema da sua empresa<br />talvez não seja falta de demanda.
             </h1>
             <h2 className="hero-h2" style={{ color: C.gold }}>
