@@ -7,6 +7,7 @@ import Home from "@/pages/home";
 import Imoveis from "@/pages/imoveis";
 import Advogados from "@/pages/advogados";
 import Medicos from "@/pages/medicos";
+import CookieBanner from "@/components/CookieBanner";
 
 function Router() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <Router />
+        <CookieBanner />
       </TooltipProvider>
     </QueryClientProvider>
   );

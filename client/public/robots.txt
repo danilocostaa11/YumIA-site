@@ -1,11 +1,11 @@
-# YumIA — https://yumia.com.br
+# YumIA — https://www.yumia.com.br
 # SEO robots.txt
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://yumia.com.br/sitemap.xml
+Sitemap: https://www.yumia.com.br/sitemap.xml
 
 # Páginas principais
 Allow: /

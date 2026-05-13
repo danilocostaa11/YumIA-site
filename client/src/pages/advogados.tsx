@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import RoiCalculator from '../components/RoiCalculator'
 
 const C = {
@@ -15,6 +16,43 @@ function GreenCheck({ children }: { children: React.ReactNode }) {
 }
 
 export default function Advogados() {
+  // SEO meta
+  useEffect(() => {
+    document.title = 'YumIA para Advocacia — IA que Converte Consultas em Faturamento'
+    let desc = document.querySelector('meta[name=description]')
+    if (desc) desc.setAttribute('content', 'IA para escritórios de advocacia: triagem automática, atendimento 24/7, reativação de base e dashboard jurídico. Método MAPA com ROI mensurável.')
+    let canon = document.querySelector('link[rel=canonical]')
+    if (canon) canon.setAttribute('href', 'https://www.yumia.com.br/advogados')
+  }, [])
+
+  // Form state
+  const [form, setForm] = useState({ nome: '', empresa: '', whatsapp: '', email: '', desafio: '' })
+  const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState('')
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setError('')
+    try {
+      const res = await fetch('/api/contacts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form.nome,
+          email: form.email,
+          company: form.empresa,
+          phone: form.whatsapp,
+          message: form.desafio,
+          consent: true,
+        }),
+      })
+      if (!res.ok) throw new Error('Erro ao enviar')
+      setSubmitted(true)
+    } catch {
+      setError('Erro ao enviar. Tente novamente.')
+    }
+  }
+
   return (
     <main style={{ background: C.bg, color: C.text, fontFamily: "'DM Sans', sans-serif" }}>
 
@@ -199,43 +237,73 @@ export default function Advogados() {
             <GreenCheck>Estimativa de ROI personalizada para seu escritório</GreenCheck>
             <GreenCheck>Plano de ação com primeiras etapas</GreenCheck>
           </div>
-          <form className="contact-form" style={{ background: C.panel, border: `1px solid ${C.border}` }} onSubmit={e => e.preventDefault()}>
-            <div className="form-row">
-              {[
-                { name: 'nome', label: 'Nome completo', placeholder: 'Dr(a). Seu nome' },
-                { name: 'empresa', label: 'Escritório', placeholder: 'Nome do escritório' },
-              ].map(f => (
-                <div key={f.name} className="form-field">
-                  <label className="form-label" style={{ color: C.muted }}>{f.label}</label>
-                  <input name={f.name} placeholder={f.placeholder} className="form-input" style={{ background: C.bg, border: `1px solid ${C.border}`, color: C.text }} />
-                </div>
-              ))}
+          {submitted ? (
+            <div style={{ background: C.panel, border: `1px solid ${C.border}`, borderRadius: '0.75rem', padding: '2rem', textAlign: 'center' as const }}>
+              <p style={{ color: C.green, fontSize: '1.1rem', fontWeight: 600 }}>✓ Mensagem enviada com sucesso!</p>
+              <p style={{ color: C.muted, marginTop: '0.5rem' }}>Entraremos em contato em breve.</p>
             </div>
-            <div className="form-row">
-              {[
-                { name: 'whatsapp', label: 'WhatsApp', placeholder: '+55 (11) 9XXXX-XXXX' },
-                { name: 'email', label: 'E-mail', placeholder: 'voce@escritorio.com.br' },
-              ].map(f => (
-                <div key={f.name} className="form-field">
-                  <label className="form-label" style={{ color: C.muted }}>{f.label}</label>
-                  <input name={f.name} placeholder={f.placeholder} className="form-input" style={{ background: C.bg, border: `1px solid ${C.border}`, color: C.text }} />
-                </div>
-              ))}
-            </div>
-            <div className="form-field" style={{ marginBottom: '1.5rem' }}>
-              <label className="form-label" style={{ color: C.muted }}>Qual o principal desafio hoje?</label>
-              <select className="form-input" style={{ background: C.bg, border: `1px solid ${C.border}`, color: C.muted }}>
-                <option value="">Selecione...</option>
-                <option>Consultas perdidas fora do horário</option>
-                <option>Triagem manual e cara</option>
-                <option>Base antiga esquecida</option>
-                <option>Equipe sobrecarregada com operacional</option>
-                <option>Falta de visibilidade do funil</option>
-              </select>
-            </div>
-            <button type="submit" className="btn-primary btn-full">Quero meu diagnóstico gratuito →</button>
-            <p className="form-fine" style={{ color: '#3A3A4A' }}>60 min · Sem compromisso · ROI personalizado para seu escritório</p>
-          </form>
+          ) : (
+            <form className="contact-form" style={{ background: C.panel, border: `1px solid ${C.border}` }} onSubmit={handleSubmit}>
+              {error && <p style={{ color: C.red, marginBottom: '1rem', textAlign: 'center' as const }}>{error}</p>}
+              <div className="form-row">
+                {[
+                  { name: 'nome' as const, label: 'Nome completo', placeholder: 'Dr(a). Seu nome' },
+                  { name: 'empresa' as const, label: 'Escritório', placeholder: 'Nome do escritório' },
+                ].map(f => (
+                  <div key={f.name} className="form-field">
+                    <label className="form-label" style={{ color: C.muted }}>{f.label}</label>
+                    <input
+                      name={f.name}
+                      placeholder={f.placeholder}
+                      className="form-input"
+                      style={{ background: C.bg, border: `1px solid ${C.border}`, color: C.text }}
+                      required={f.name === 'nome'}
+                      value={form[f.name]}
+                      onChange={e => setForm(prev => ({ ...prev, [f.name]: e.target.value }))}
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="form-row">
+                {[
+                  { name: 'whatsapp' as const, label: 'WhatsApp', placeholder: '+55 (11) 9XXXX-XXXX' },
+                  { name: 'email' as const, label: 'E-mail', placeholder: 'voce@escritorio.com.br' },
+                ].map(f => (
+                  <div key={f.name} className="form-field">
+                    <label className="form-label" style={{ color: C.muted }}>{f.label}</label>
+                    <input
+                      name={f.name}
+                      placeholder={f.placeholder}
+                      className="form-input"
+                      style={{ background: C.bg, border: `1px solid ${C.border}`, color: C.text }}
+                      required
+                      value={form[f.name]}
+                      onChange={e => setForm(prev => ({ ...prev, [f.name]: e.target.value }))}
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="form-field" style={{ marginBottom: '1.5rem' }}>
+                <label className="form-label" style={{ color: C.muted }}>Qual o principal desafio hoje?</label>
+                <select
+                  name="desafio"
+                  className="form-input"
+                  style={{ background: C.bg, border: `1px solid ${C.border}`, color: C.muted }}
+                  value={form.desafio}
+                  onChange={e => setForm(prev => ({ ...prev, desafio: e.target.value }))}
+                >
+                  <option value="">Selecione...</option>
+                  <option>Consultas perdidas fora do horário</option>
+                  <option>Triagem manual e cara</option>
+                  <option>Base antiga esquecida</option>
+                  <option>Equipe sobrecarregada com operacional</option>
+                  <option>Falta de visibilidade do funil</option>
+                </select>
+              </div>
+              <button type="submit" className="btn-primary btn-full">Quero meu diagnóstico gratuito →</button>
+              <p className="form-fine" style={{ color: '#3A3A4A' }}>60 min · Sem compromisso · ROI personalizado para seu escritório</p>
+            </form>
+          )}
           <div className="contact-info">
             {[
               { icon: '📞', label: 'WhatsApp', value: '+55 (11) 96418-0674' },
